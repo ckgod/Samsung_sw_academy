@@ -1,7 +1,8 @@
 file(REMOVE_RECURSE
   "BOJproject"
   "BOJproject.pdb"
-  "CMakeFiles/BOJproject.dir/bit_3.cpp.o"
+  "CMakeFiles/BOJproject.dir/SingleList_practice_main.cpp.o"
+  "CMakeFiles/BOJproject.dir/SingleList_practice_userImpl.cpp.o"
 )
 
 # Per-language clean rules from dependency scanning.

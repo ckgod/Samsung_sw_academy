@@ -143,32 +143,59 @@ BOJproject/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/build
 .PHONY : BOJproject/fast
 
-bit_3.o: bit_3.cpp.o
+SingleList_practice_main.o: SingleList_practice_main.cpp.o
 
-.PHONY : bit_3.o
+.PHONY : SingleList_practice_main.o
 
 # target to build an object file
-bit_3.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/bit_3.cpp.o
-.PHONY : bit_3.cpp.o
+SingleList_practice_main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/SingleList_practice_main.cpp.o
+.PHONY : SingleList_practice_main.cpp.o
 
-bit_3.i: bit_3.cpp.i
+SingleList_practice_main.i: SingleList_practice_main.cpp.i
 
-.PHONY : bit_3.i
+.PHONY : SingleList_practice_main.i
 
 # target to preprocess a source file
-bit_3.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/bit_3.cpp.i
-.PHONY : bit_3.cpp.i
+SingleList_practice_main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/SingleList_practice_main.cpp.i
+.PHONY : SingleList_practice_main.cpp.i
 
-bit_3.s: bit_3.cpp.s
+SingleList_practice_main.s: SingleList_practice_main.cpp.s
 
-.PHONY : bit_3.s
+.PHONY : SingleList_practice_main.s
 
 # target to generate assembly for a file
-bit_3.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/bit_3.cpp.s
-.PHONY : bit_3.cpp.s
+SingleList_practice_main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/SingleList_practice_main.cpp.s
+.PHONY : SingleList_practice_main.cpp.s
+
+SingleList_practice_userImpl.o: SingleList_practice_userImpl.cpp.o
+
+.PHONY : SingleList_practice_userImpl.o
+
+# target to build an object file
+SingleList_practice_userImpl.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/SingleList_practice_userImpl.cpp.o
+.PHONY : SingleList_practice_userImpl.cpp.o
+
+SingleList_practice_userImpl.i: SingleList_practice_userImpl.cpp.i
+
+.PHONY : SingleList_practice_userImpl.i
+
+# target to preprocess a source file
+SingleList_practice_userImpl.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/SingleList_practice_userImpl.cpp.i
+.PHONY : SingleList_practice_userImpl.cpp.i
+
+SingleList_practice_userImpl.s: SingleList_practice_userImpl.cpp.s
+
+.PHONY : SingleList_practice_userImpl.s
+
+# target to generate assembly for a file
+SingleList_practice_userImpl.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/SingleList_practice_userImpl.cpp.s
+.PHONY : SingleList_practice_userImpl.cpp.s
 
 # Help Target
 help:
@@ -179,9 +206,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... BOJproject"
-	@echo "... bit_3.o"
-	@echo "... bit_3.i"
-	@echo "... bit_3.s"
+	@echo "... SingleList_practice_main.o"
+	@echo "... SingleList_practice_main.i"
+	@echo "... SingleList_practice_main.s"
+	@echo "... SingleList_practice_userImpl.o"
+	@echo "... SingleList_practice_userImpl.i"
+	@echo "... SingleList_practice_userImpl.s"
 .PHONY : help
 
 

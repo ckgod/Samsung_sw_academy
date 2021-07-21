@@ -6,11 +6,5 @@
 
 #IncludeRegexTransform: 
 
-/Users/ckg/CLionProjects/BOJproject/bit_3.cpp
-iostream
--
-string
--
-bitset
--
+/Users/ckg/CLionProjects/BOJproject/SingleList_practice_userImpl.cpp
 
