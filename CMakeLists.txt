@@ -3,4 +3,4 @@ project(BOJproject)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(BOJproject DoubleList_practice_main.cpp DoubleList_practice_userImpl.cpp)
+add_executable(BOJproject LinkedList/DoubleList_practice_main.cpp LinkedList/DoubleList_practice_userImpl.cpp)
