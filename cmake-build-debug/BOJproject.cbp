@@ -80,10 +80,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/ckg/CLionProjects/BOJproject/DoubleList_practice_main.cpp">
-			<Option target="BOJproject"/>
-		</Unit>
-		<Unit filename="/Users/ckg/CLionProjects/BOJproject/DoubleList_practice_userImpl.cpp">
+		<Unit filename="/Users/ckg/CLionProjects/BOJproject/LinkedList/Problem_3.cpp">
 			<Option target="BOJproject"/>
 		</Unit>
 		<Unit filename="/Users/ckg/CLionProjects/BOJproject/CMakeLists.txt">

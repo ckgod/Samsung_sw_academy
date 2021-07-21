@@ -143,59 +143,32 @@ BOJproject/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/build
 .PHONY : BOJproject/fast
 
-DoubleList_practice_main.o: DoubleList_practice_main.cpp.o
+LinkedList/Problem_3.o: LinkedList/Problem_3.cpp.o
 
-.PHONY : DoubleList_practice_main.o
-
-# target to build an object file
-DoubleList_practice_main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/DoubleList_practice_main.cpp.o
-.PHONY : DoubleList_practice_main.cpp.o
-
-DoubleList_practice_main.i: DoubleList_practice_main.cpp.i
-
-.PHONY : DoubleList_practice_main.i
-
-# target to preprocess a source file
-DoubleList_practice_main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/DoubleList_practice_main.cpp.i
-.PHONY : DoubleList_practice_main.cpp.i
-
-DoubleList_practice_main.s: DoubleList_practice_main.cpp.s
-
-.PHONY : DoubleList_practice_main.s
-
-# target to generate assembly for a file
-DoubleList_practice_main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/DoubleList_practice_main.cpp.s
-.PHONY : DoubleList_practice_main.cpp.s
-
-DoubleList_practice_userImpl.o: DoubleList_practice_userImpl.cpp.o
-
-.PHONY : DoubleList_practice_userImpl.o
+.PHONY : LinkedList/Problem_3.o
 
 # target to build an object file
-DoubleList_practice_userImpl.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/DoubleList_practice_userImpl.cpp.o
-.PHONY : DoubleList_practice_userImpl.cpp.o
+LinkedList/Problem_3.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/LinkedList/Problem_3.cpp.o
+.PHONY : LinkedList/Problem_3.cpp.o
 
-DoubleList_practice_userImpl.i: DoubleList_practice_userImpl.cpp.i
+LinkedList/Problem_3.i: LinkedList/Problem_3.cpp.i
 
-.PHONY : DoubleList_practice_userImpl.i
+.PHONY : LinkedList/Problem_3.i
 
 # target to preprocess a source file
-DoubleList_practice_userImpl.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/DoubleList_practice_userImpl.cpp.i
-.PHONY : DoubleList_practice_userImpl.cpp.i
+LinkedList/Problem_3.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/LinkedList/Problem_3.cpp.i
+.PHONY : LinkedList/Problem_3.cpp.i
 
-DoubleList_practice_userImpl.s: DoubleList_practice_userImpl.cpp.s
+LinkedList/Problem_3.s: LinkedList/Problem_3.cpp.s
 
-.PHONY : DoubleList_practice_userImpl.s
+.PHONY : LinkedList/Problem_3.s
 
 # target to generate assembly for a file
-DoubleList_practice_userImpl.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/DoubleList_practice_userImpl.cpp.s
-.PHONY : DoubleList_practice_userImpl.cpp.s
+LinkedList/Problem_3.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/LinkedList/Problem_3.cpp.s
+.PHONY : LinkedList/Problem_3.cpp.s
 
 # Help Target
 help:
@@ -206,12 +179,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... BOJproject"
-	@echo "... DoubleList_practice_main.o"
-	@echo "... DoubleList_practice_main.i"
-	@echo "... DoubleList_practice_main.s"
-	@echo "... DoubleList_practice_userImpl.o"
-	@echo "... DoubleList_practice_userImpl.i"
-	@echo "... DoubleList_practice_userImpl.s"
+	@echo "... LinkedList/Problem_3.o"
+	@echo "... LinkedList/Problem_3.i"
+	@echo "... LinkedList/Problem_3.s"
 .PHONY : help
 
 

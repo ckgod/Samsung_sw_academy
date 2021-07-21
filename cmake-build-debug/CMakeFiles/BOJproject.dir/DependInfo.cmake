@@ -4,8 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/ckg/CLionProjects/BOJproject/DoubleList_practice_main.cpp" "/Users/ckg/CLionProjects/BOJproject/cmake-build-debug/CMakeFiles/BOJproject.dir/DoubleList_practice_main.cpp.o"
-  "/Users/ckg/CLionProjects/BOJproject/DoubleList_practice_userImpl.cpp" "/Users/ckg/CLionProjects/BOJproject/cmake-build-debug/CMakeFiles/BOJproject.dir/DoubleList_practice_userImpl.cpp.o"
+  "/Users/ckg/CLionProjects/BOJproject/LinkedList/Problem_3.cpp" "/Users/ckg/CLionProjects/BOJproject/cmake-build-debug/CMakeFiles/BOJproject.dir/LinkedList/Problem_3.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
