@@ -143,59 +143,59 @@ BOJproject/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/build
 .PHONY : BOJproject/fast
 
-SingleList_practice_main.o: SingleList_practice_main.cpp.o
+DoubleList_practice_main.o: DoubleList_practice_main.cpp.o
 
-.PHONY : SingleList_practice_main.o
-
-# target to build an object file
-SingleList_practice_main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/SingleList_practice_main.cpp.o
-.PHONY : SingleList_practice_main.cpp.o
-
-SingleList_practice_main.i: SingleList_practice_main.cpp.i
-
-.PHONY : SingleList_practice_main.i
-
-# target to preprocess a source file
-SingleList_practice_main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/SingleList_practice_main.cpp.i
-.PHONY : SingleList_practice_main.cpp.i
-
-SingleList_practice_main.s: SingleList_practice_main.cpp.s
-
-.PHONY : SingleList_practice_main.s
-
-# target to generate assembly for a file
-SingleList_practice_main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/SingleList_practice_main.cpp.s
-.PHONY : SingleList_practice_main.cpp.s
-
-SingleList_practice_userImpl.o: SingleList_practice_userImpl.cpp.o
-
-.PHONY : SingleList_practice_userImpl.o
+.PHONY : DoubleList_practice_main.o
 
 # target to build an object file
-SingleList_practice_userImpl.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/SingleList_practice_userImpl.cpp.o
-.PHONY : SingleList_practice_userImpl.cpp.o
+DoubleList_practice_main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/DoubleList_practice_main.cpp.o
+.PHONY : DoubleList_practice_main.cpp.o
 
-SingleList_practice_userImpl.i: SingleList_practice_userImpl.cpp.i
+DoubleList_practice_main.i: DoubleList_practice_main.cpp.i
 
-.PHONY : SingleList_practice_userImpl.i
+.PHONY : DoubleList_practice_main.i
 
 # target to preprocess a source file
-SingleList_practice_userImpl.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/SingleList_practice_userImpl.cpp.i
-.PHONY : SingleList_practice_userImpl.cpp.i
+DoubleList_practice_main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/DoubleList_practice_main.cpp.i
+.PHONY : DoubleList_practice_main.cpp.i
 
-SingleList_practice_userImpl.s: SingleList_practice_userImpl.cpp.s
+DoubleList_practice_main.s: DoubleList_practice_main.cpp.s
 
-.PHONY : SingleList_practice_userImpl.s
+.PHONY : DoubleList_practice_main.s
 
 # target to generate assembly for a file
-SingleList_practice_userImpl.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/SingleList_practice_userImpl.cpp.s
-.PHONY : SingleList_practice_userImpl.cpp.s
+DoubleList_practice_main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/DoubleList_practice_main.cpp.s
+.PHONY : DoubleList_practice_main.cpp.s
+
+DoubleList_practice_userImpl.o: DoubleList_practice_userImpl.cpp.o
+
+.PHONY : DoubleList_practice_userImpl.o
+
+# target to build an object file
+DoubleList_practice_userImpl.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/DoubleList_practice_userImpl.cpp.o
+.PHONY : DoubleList_practice_userImpl.cpp.o
+
+DoubleList_practice_userImpl.i: DoubleList_practice_userImpl.cpp.i
+
+.PHONY : DoubleList_practice_userImpl.i
+
+# target to preprocess a source file
+DoubleList_practice_userImpl.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/DoubleList_practice_userImpl.cpp.i
+.PHONY : DoubleList_practice_userImpl.cpp.i
+
+DoubleList_practice_userImpl.s: DoubleList_practice_userImpl.cpp.s
+
+.PHONY : DoubleList_practice_userImpl.s
+
+# target to generate assembly for a file
+DoubleList_practice_userImpl.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/DoubleList_practice_userImpl.cpp.s
+.PHONY : DoubleList_practice_userImpl.cpp.s
 
 # Help Target
 help:
@@ -206,12 +206,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... BOJproject"
-	@echo "... SingleList_practice_main.o"
-	@echo "... SingleList_practice_main.i"
-	@echo "... SingleList_practice_main.s"
-	@echo "... SingleList_practice_userImpl.o"
-	@echo "... SingleList_practice_userImpl.i"
-	@echo "... SingleList_practice_userImpl.s"
+	@echo "... DoubleList_practice_main.o"
+	@echo "... DoubleList_practice_main.i"
+	@echo "... DoubleList_practice_main.s"
+	@echo "... DoubleList_practice_userImpl.o"
+	@echo "... DoubleList_practice_userImpl.i"
+	@echo "... DoubleList_practice_userImpl.s"
 .PHONY : help
 
 

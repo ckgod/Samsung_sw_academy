@@ -77,42 +77,42 @@ include CMakeFiles/BOJproject.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/BOJproject.dir/flags.make
 
-CMakeFiles/BOJproject.dir/SingleList_practice_userImpl.cpp.o: CMakeFiles/BOJproject.dir/flags.make
-CMakeFiles/BOJproject.dir/SingleList_practice_userImpl.cpp.o: ../SingleList_practice_userImpl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ckg/CLionProjects/BOJproject/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/BOJproject.dir/SingleList_practice_userImpl.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BOJproject.dir/SingleList_practice_userImpl.cpp.o -c /Users/ckg/CLionProjects/BOJproject/SingleList_practice_userImpl.cpp
+CMakeFiles/BOJproject.dir/DoubleList_practice_main.cpp.o: CMakeFiles/BOJproject.dir/flags.make
+CMakeFiles/BOJproject.dir/DoubleList_practice_main.cpp.o: ../DoubleList_practice_main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ckg/CLionProjects/BOJproject/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/BOJproject.dir/DoubleList_practice_main.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BOJproject.dir/DoubleList_practice_main.cpp.o -c /Users/ckg/CLionProjects/BOJproject/DoubleList_practice_main.cpp
 
-CMakeFiles/BOJproject.dir/SingleList_practice_userImpl.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BOJproject.dir/SingleList_practice_userImpl.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ckg/CLionProjects/BOJproject/SingleList_practice_userImpl.cpp > CMakeFiles/BOJproject.dir/SingleList_practice_userImpl.cpp.i
+CMakeFiles/BOJproject.dir/DoubleList_practice_main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BOJproject.dir/DoubleList_practice_main.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ckg/CLionProjects/BOJproject/DoubleList_practice_main.cpp > CMakeFiles/BOJproject.dir/DoubleList_practice_main.cpp.i
 
-CMakeFiles/BOJproject.dir/SingleList_practice_userImpl.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BOJproject.dir/SingleList_practice_userImpl.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ckg/CLionProjects/BOJproject/SingleList_practice_userImpl.cpp -o CMakeFiles/BOJproject.dir/SingleList_practice_userImpl.cpp.s
+CMakeFiles/BOJproject.dir/DoubleList_practice_main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BOJproject.dir/DoubleList_practice_main.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ckg/CLionProjects/BOJproject/DoubleList_practice_main.cpp -o CMakeFiles/BOJproject.dir/DoubleList_practice_main.cpp.s
 
-CMakeFiles/BOJproject.dir/SingleList_practice_main.cpp.o: CMakeFiles/BOJproject.dir/flags.make
-CMakeFiles/BOJproject.dir/SingleList_practice_main.cpp.o: ../SingleList_practice_main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ckg/CLionProjects/BOJproject/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/BOJproject.dir/SingleList_practice_main.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BOJproject.dir/SingleList_practice_main.cpp.o -c /Users/ckg/CLionProjects/BOJproject/SingleList_practice_main.cpp
+CMakeFiles/BOJproject.dir/DoubleList_practice_userImpl.cpp.o: CMakeFiles/BOJproject.dir/flags.make
+CMakeFiles/BOJproject.dir/DoubleList_practice_userImpl.cpp.o: ../DoubleList_practice_userImpl.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ckg/CLionProjects/BOJproject/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/BOJproject.dir/DoubleList_practice_userImpl.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BOJproject.dir/DoubleList_practice_userImpl.cpp.o -c /Users/ckg/CLionProjects/BOJproject/DoubleList_practice_userImpl.cpp
 
-CMakeFiles/BOJproject.dir/SingleList_practice_main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BOJproject.dir/SingleList_practice_main.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ckg/CLionProjects/BOJproject/SingleList_practice_main.cpp > CMakeFiles/BOJproject.dir/SingleList_practice_main.cpp.i
+CMakeFiles/BOJproject.dir/DoubleList_practice_userImpl.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BOJproject.dir/DoubleList_practice_userImpl.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ckg/CLionProjects/BOJproject/DoubleList_practice_userImpl.cpp > CMakeFiles/BOJproject.dir/DoubleList_practice_userImpl.cpp.i
 
-CMakeFiles/BOJproject.dir/SingleList_practice_main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BOJproject.dir/SingleList_practice_main.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ckg/CLionProjects/BOJproject/SingleList_practice_main.cpp -o CMakeFiles/BOJproject.dir/SingleList_practice_main.cpp.s
+CMakeFiles/BOJproject.dir/DoubleList_practice_userImpl.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BOJproject.dir/DoubleList_practice_userImpl.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ckg/CLionProjects/BOJproject/DoubleList_practice_userImpl.cpp -o CMakeFiles/BOJproject.dir/DoubleList_practice_userImpl.cpp.s
 
 # Object files for target BOJproject
 BOJproject_OBJECTS = \
-"CMakeFiles/BOJproject.dir/SingleList_practice_userImpl.cpp.o" \
-"CMakeFiles/BOJproject.dir/SingleList_practice_main.cpp.o"
+"CMakeFiles/BOJproject.dir/DoubleList_practice_main.cpp.o" \
+"CMakeFiles/BOJproject.dir/DoubleList_practice_userImpl.cpp.o"
 
 # External object files for target BOJproject
 BOJproject_EXTERNAL_OBJECTS =
 
-BOJproject: CMakeFiles/BOJproject.dir/SingleList_practice_userImpl.cpp.o
-BOJproject: CMakeFiles/BOJproject.dir/SingleList_practice_main.cpp.o
+BOJproject: CMakeFiles/BOJproject.dir/DoubleList_practice_main.cpp.o
+BOJproject: CMakeFiles/BOJproject.dir/DoubleList_practice_userImpl.cpp.o
 BOJproject: CMakeFiles/BOJproject.dir/build.make
 BOJproject: CMakeFiles/BOJproject.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/ckg/CLionProjects/BOJproject/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable BOJproject"
