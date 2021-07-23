@@ -3,4 +3,4 @@ project(BOJproject)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(BOJproject LinkedList/Problem_4_v1.cpp)
+add_executable(BOJproject greedy_dp_bf/Problem_2.cpp)
