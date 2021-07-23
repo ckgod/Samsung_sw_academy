@@ -1,1 +1,1 @@
-/Library/Developer/CommandLineTools/usr/bin/c++  -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/BOJproject.dir/LinkedList/Problem_3.cpp.o  -o BOJproject 
+/Library/Developer/CommandLineTools/usr/bin/c++  -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/BOJproject.dir/LinkedList/Problem_4_v1.cpp.o  -o BOJproject 

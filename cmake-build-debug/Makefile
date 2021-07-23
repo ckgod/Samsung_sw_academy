@@ -143,32 +143,32 @@ BOJproject/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/build
 .PHONY : BOJproject/fast
 
-LinkedList/Problem_3.o: LinkedList/Problem_3.cpp.o
+LinkedList/Problem_4_v1.o: LinkedList/Problem_4_v1.cpp.o
 
-.PHONY : LinkedList/Problem_3.o
+.PHONY : LinkedList/Problem_4_v1.o
 
 # target to build an object file
-LinkedList/Problem_3.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/LinkedList/Problem_3.cpp.o
-.PHONY : LinkedList/Problem_3.cpp.o
+LinkedList/Problem_4_v1.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/LinkedList/Problem_4_v1.cpp.o
+.PHONY : LinkedList/Problem_4_v1.cpp.o
 
-LinkedList/Problem_3.i: LinkedList/Problem_3.cpp.i
+LinkedList/Problem_4_v1.i: LinkedList/Problem_4_v1.cpp.i
 
-.PHONY : LinkedList/Problem_3.i
+.PHONY : LinkedList/Problem_4_v1.i
 
 # target to preprocess a source file
-LinkedList/Problem_3.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/LinkedList/Problem_3.cpp.i
-.PHONY : LinkedList/Problem_3.cpp.i
+LinkedList/Problem_4_v1.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/LinkedList/Problem_4_v1.cpp.i
+.PHONY : LinkedList/Problem_4_v1.cpp.i
 
-LinkedList/Problem_3.s: LinkedList/Problem_3.cpp.s
+LinkedList/Problem_4_v1.s: LinkedList/Problem_4_v1.cpp.s
 
-.PHONY : LinkedList/Problem_3.s
+.PHONY : LinkedList/Problem_4_v1.s
 
 # target to generate assembly for a file
-LinkedList/Problem_3.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/LinkedList/Problem_3.cpp.s
-.PHONY : LinkedList/Problem_3.cpp.s
+LinkedList/Problem_4_v1.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/LinkedList/Problem_4_v1.cpp.s
+.PHONY : LinkedList/Problem_4_v1.cpp.s
 
 # Help Target
 help:
@@ -179,9 +179,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... BOJproject"
-	@echo "... LinkedList/Problem_3.o"
-	@echo "... LinkedList/Problem_3.i"
-	@echo "... LinkedList/Problem_3.s"
+	@echo "... LinkedList/Problem_4_v1.o"
+	@echo "... LinkedList/Problem_4_v1.i"
+	@echo "... LinkedList/Problem_4_v1.s"
 .PHONY : help
 
 
