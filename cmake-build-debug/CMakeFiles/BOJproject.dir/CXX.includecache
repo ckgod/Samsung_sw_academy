@@ -6,7 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/Users/ckg/CLionProjects/BOJproject/greedy_dp_bf/Problem_1.cpp
+/Users/ckg/CLionProjects/BOJproject/greedy_dp_bf/Problem_2.cpp
 iostream
+-
+algorithm
 -
 

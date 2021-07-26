@@ -77,27 +77,27 @@ include CMakeFiles/BOJproject.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/BOJproject.dir/flags.make
 
-CMakeFiles/BOJproject.dir/greedy_dp_bf/Problem_2.cpp.o: CMakeFiles/BOJproject.dir/flags.make
-CMakeFiles/BOJproject.dir/greedy_dp_bf/Problem_2.cpp.o: ../greedy_dp_bf/Problem_2.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ckg/CLionProjects/BOJproject/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/BOJproject.dir/greedy_dp_bf/Problem_2.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BOJproject.dir/greedy_dp_bf/Problem_2.cpp.o -c /Users/ckg/CLionProjects/BOJproject/greedy_dp_bf/Problem_2.cpp
+CMakeFiles/BOJproject.dir/greedy_dp_bf/Problem_3.cpp.o: CMakeFiles/BOJproject.dir/flags.make
+CMakeFiles/BOJproject.dir/greedy_dp_bf/Problem_3.cpp.o: ../greedy_dp_bf/Problem_3.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ckg/CLionProjects/BOJproject/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/BOJproject.dir/greedy_dp_bf/Problem_3.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BOJproject.dir/greedy_dp_bf/Problem_3.cpp.o -c /Users/ckg/CLionProjects/BOJproject/greedy_dp_bf/Problem_3.cpp
 
-CMakeFiles/BOJproject.dir/greedy_dp_bf/Problem_2.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BOJproject.dir/greedy_dp_bf/Problem_2.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ckg/CLionProjects/BOJproject/greedy_dp_bf/Problem_2.cpp > CMakeFiles/BOJproject.dir/greedy_dp_bf/Problem_2.cpp.i
+CMakeFiles/BOJproject.dir/greedy_dp_bf/Problem_3.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BOJproject.dir/greedy_dp_bf/Problem_3.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ckg/CLionProjects/BOJproject/greedy_dp_bf/Problem_3.cpp > CMakeFiles/BOJproject.dir/greedy_dp_bf/Problem_3.cpp.i
 
-CMakeFiles/BOJproject.dir/greedy_dp_bf/Problem_2.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BOJproject.dir/greedy_dp_bf/Problem_2.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ckg/CLionProjects/BOJproject/greedy_dp_bf/Problem_2.cpp -o CMakeFiles/BOJproject.dir/greedy_dp_bf/Problem_2.cpp.s
+CMakeFiles/BOJproject.dir/greedy_dp_bf/Problem_3.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BOJproject.dir/greedy_dp_bf/Problem_3.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ckg/CLionProjects/BOJproject/greedy_dp_bf/Problem_3.cpp -o CMakeFiles/BOJproject.dir/greedy_dp_bf/Problem_3.cpp.s
 
 # Object files for target BOJproject
 BOJproject_OBJECTS = \
-"CMakeFiles/BOJproject.dir/greedy_dp_bf/Problem_2.cpp.o"
+"CMakeFiles/BOJproject.dir/greedy_dp_bf/Problem_3.cpp.o"
 
 # External object files for target BOJproject
 BOJproject_EXTERNAL_OBJECTS =
 
-BOJproject: CMakeFiles/BOJproject.dir/greedy_dp_bf/Problem_2.cpp.o
+BOJproject: CMakeFiles/BOJproject.dir/greedy_dp_bf/Problem_3.cpp.o
 BOJproject: CMakeFiles/BOJproject.dir/build.make
 BOJproject: CMakeFiles/BOJproject.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/ckg/CLionProjects/BOJproject/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable BOJproject"
