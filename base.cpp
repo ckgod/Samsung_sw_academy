@@ -1,40 +1,33 @@
-#include<iostream>
-#include<string.h>
-#include<algorithm>
+#include <string>
+#include <algorithm>
+#include <iostream>
 using namespace std;
-
-int N;
-int now_room;
-int next_room;
-int room[401] = {0};
-int now_check;
-int next_check;
-int cnt = 0;
-int main(int argc, char** argv)
-{
-    int test_case;
-    int T;
-    cin>>T;
-    for(test_case = 1; test_case <= T; ++test_case)
-    {
-        memset(room, 0 , sizeof(room));
-        cin>>N;
-        for(int i = 0; i < N; i++){
-            cin >> now_room;
-            cin >> next_room;
-            if(now_room > next_room){
-                swap(now_room, next_room);
-            }
-
-            if((now_room % 2) == 0) now_room--;
-            if((next_room % 2) == 1) next_room++;
-
-            for(int j = now_room; j <= next_room; j++){
-                room[j]++;
+int n, result;
+string num;
+void dfs(int cur, int cnt) {
+    if(cnt==n) {
+        result=max(result, stoi(num));
+        return;
+    }
+    for(int i=cur; i<num.size(); i++) {
+        for(int j=i+1; j<num.size(); j++) {
+            if(num[i] <= num[j]) {
+                swap(num[i], num[j]);
+                dfs(i, cnt + 1);
+                swap(num[i], num[j]);
             }
         }
-        cnt = *max_element(room, room+401);
-        cout << "#" << test_case << " " << cnt << endl;
     }
-    return 0;//정상종료시 반드시 0을 리턴해야합니다.
+}
+int main() {
+    ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
+    int tc;
+    cin>>tc;
+    for(int i=1; i<=tc; i++) {
+        cin>>num>>n;
+        result=0;
+        dfs(0,0);
+        cout<<"#"<<i<<" "<<result<<"\n";
+    }
+    return 0;
 }
