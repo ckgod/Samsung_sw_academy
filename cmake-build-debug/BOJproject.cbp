@@ -80,7 +80,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/ckg/CLionProjects/BOJproject/greedy_dp_bf/Problem_3.cpp">
+		<Unit filename="/Users/ckg/CLionProjects/BOJproject/Divide_Conquer/name_sort.cpp">
 			<Option target="BOJproject"/>
 		</Unit>
 		<Unit filename="/Users/ckg/CLionProjects/BOJproject/CMakeLists.txt">

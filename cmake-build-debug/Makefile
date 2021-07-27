@@ -143,32 +143,32 @@ BOJproject/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/build
 .PHONY : BOJproject/fast
 
-greedy_dp_bf/Problem_3.o: greedy_dp_bf/Problem_3.cpp.o
+Divide_Conquer/name_sort.o: Divide_Conquer/name_sort.cpp.o
 
-.PHONY : greedy_dp_bf/Problem_3.o
+.PHONY : Divide_Conquer/name_sort.o
 
 # target to build an object file
-greedy_dp_bf/Problem_3.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/greedy_dp_bf/Problem_3.cpp.o
-.PHONY : greedy_dp_bf/Problem_3.cpp.o
+Divide_Conquer/name_sort.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/Divide_Conquer/name_sort.cpp.o
+.PHONY : Divide_Conquer/name_sort.cpp.o
 
-greedy_dp_bf/Problem_3.i: greedy_dp_bf/Problem_3.cpp.i
+Divide_Conquer/name_sort.i: Divide_Conquer/name_sort.cpp.i
 
-.PHONY : greedy_dp_bf/Problem_3.i
+.PHONY : Divide_Conquer/name_sort.i
 
 # target to preprocess a source file
-greedy_dp_bf/Problem_3.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/greedy_dp_bf/Problem_3.cpp.i
-.PHONY : greedy_dp_bf/Problem_3.cpp.i
+Divide_Conquer/name_sort.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/Divide_Conquer/name_sort.cpp.i
+.PHONY : Divide_Conquer/name_sort.cpp.i
 
-greedy_dp_bf/Problem_3.s: greedy_dp_bf/Problem_3.cpp.s
+Divide_Conquer/name_sort.s: Divide_Conquer/name_sort.cpp.s
 
-.PHONY : greedy_dp_bf/Problem_3.s
+.PHONY : Divide_Conquer/name_sort.s
 
 # target to generate assembly for a file
-greedy_dp_bf/Problem_3.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/greedy_dp_bf/Problem_3.cpp.s
-.PHONY : greedy_dp_bf/Problem_3.cpp.s
+Divide_Conquer/name_sort.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/Divide_Conquer/name_sort.cpp.s
+.PHONY : Divide_Conquer/name_sort.cpp.s
 
 # Help Target
 help:
@@ -179,9 +179,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... BOJproject"
-	@echo "... greedy_dp_bf/Problem_3.o"
-	@echo "... greedy_dp_bf/Problem_3.i"
-	@echo "... greedy_dp_bf/Problem_3.s"
+	@echo "... Divide_Conquer/name_sort.o"
+	@echo "... Divide_Conquer/name_sort.i"
+	@echo "... Divide_Conquer/name_sort.s"
 .PHONY : help
 
 

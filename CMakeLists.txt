@@ -3,4 +3,4 @@ project(BOJproject)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(BOJproject greedy_dp_bf/Problem_3.cpp)
+add_executable(BOJproject Divide_Conquer/name_sort.cpp)

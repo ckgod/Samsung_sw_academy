@@ -6,10 +6,12 @@
 
 #IncludeRegexTransform: 
 
-/Users/ckg/CLionProjects/BOJproject/greedy_dp_bf/Problem_3.cpp
+/Users/ckg/CLionProjects/BOJproject/Divide_Conquer/name_sort.cpp
 iostream
 -
 string
+-
+vector
 -
 algorithm
 -
