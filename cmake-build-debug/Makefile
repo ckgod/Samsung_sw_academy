@@ -143,32 +143,32 @@ BOJproject/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/build
 .PHONY : BOJproject/fast
 
-Divide_Conquer/name_sort.o: Divide_Conquer/name_sort.cpp.o
+Divide_Conquer/quick_sort.o: Divide_Conquer/quick_sort.cpp.o
 
-.PHONY : Divide_Conquer/name_sort.o
+.PHONY : Divide_Conquer/quick_sort.o
 
 # target to build an object file
-Divide_Conquer/name_sort.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/Divide_Conquer/name_sort.cpp.o
-.PHONY : Divide_Conquer/name_sort.cpp.o
+Divide_Conquer/quick_sort.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/Divide_Conquer/quick_sort.cpp.o
+.PHONY : Divide_Conquer/quick_sort.cpp.o
 
-Divide_Conquer/name_sort.i: Divide_Conquer/name_sort.cpp.i
+Divide_Conquer/quick_sort.i: Divide_Conquer/quick_sort.cpp.i
 
-.PHONY : Divide_Conquer/name_sort.i
+.PHONY : Divide_Conquer/quick_sort.i
 
 # target to preprocess a source file
-Divide_Conquer/name_sort.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/Divide_Conquer/name_sort.cpp.i
-.PHONY : Divide_Conquer/name_sort.cpp.i
+Divide_Conquer/quick_sort.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/Divide_Conquer/quick_sort.cpp.i
+.PHONY : Divide_Conquer/quick_sort.cpp.i
 
-Divide_Conquer/name_sort.s: Divide_Conquer/name_sort.cpp.s
+Divide_Conquer/quick_sort.s: Divide_Conquer/quick_sort.cpp.s
 
-.PHONY : Divide_Conquer/name_sort.s
+.PHONY : Divide_Conquer/quick_sort.s
 
 # target to generate assembly for a file
-Divide_Conquer/name_sort.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/Divide_Conquer/name_sort.cpp.s
-.PHONY : Divide_Conquer/name_sort.cpp.s
+Divide_Conquer/quick_sort.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/Divide_Conquer/quick_sort.cpp.s
+.PHONY : Divide_Conquer/quick_sort.cpp.s
 
 # Help Target
 help:
@@ -179,9 +179,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... BOJproject"
-	@echo "... Divide_Conquer/name_sort.o"
-	@echo "... Divide_Conquer/name_sort.i"
-	@echo "... Divide_Conquer/name_sort.s"
+	@echo "... Divide_Conquer/quick_sort.o"
+	@echo "... Divide_Conquer/quick_sort.i"
+	@echo "... Divide_Conquer/quick_sort.s"
 .PHONY : help
 
 
