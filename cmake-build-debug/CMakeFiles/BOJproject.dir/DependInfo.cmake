@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/ckg/CLionProjects/BOJproject/Divide_Conquer/quick_sort.cpp" "/Users/ckg/CLionProjects/BOJproject/cmake-build-debug/CMakeFiles/BOJproject.dir/Divide_Conquer/quick_sort.cpp.o"
+  "/Users/ckg/CLionProjects/BOJproject/LinkedList/BucketSort.cpp" "/Users/ckg/CLionProjects/BOJproject/cmake-build-debug/CMakeFiles/BOJproject.dir/LinkedList/BucketSort.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

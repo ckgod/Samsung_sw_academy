@@ -143,32 +143,32 @@ BOJproject/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/build
 .PHONY : BOJproject/fast
 
-Divide_Conquer/quick_sort.o: Divide_Conquer/quick_sort.cpp.o
+LinkedList/BucketSort.o: LinkedList/BucketSort.cpp.o
 
-.PHONY : Divide_Conquer/quick_sort.o
+.PHONY : LinkedList/BucketSort.o
 
 # target to build an object file
-Divide_Conquer/quick_sort.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/Divide_Conquer/quick_sort.cpp.o
-.PHONY : Divide_Conquer/quick_sort.cpp.o
+LinkedList/BucketSort.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/LinkedList/BucketSort.cpp.o
+.PHONY : LinkedList/BucketSort.cpp.o
 
-Divide_Conquer/quick_sort.i: Divide_Conquer/quick_sort.cpp.i
+LinkedList/BucketSort.i: LinkedList/BucketSort.cpp.i
 
-.PHONY : Divide_Conquer/quick_sort.i
+.PHONY : LinkedList/BucketSort.i
 
 # target to preprocess a source file
-Divide_Conquer/quick_sort.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/Divide_Conquer/quick_sort.cpp.i
-.PHONY : Divide_Conquer/quick_sort.cpp.i
+LinkedList/BucketSort.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/LinkedList/BucketSort.cpp.i
+.PHONY : LinkedList/BucketSort.cpp.i
 
-Divide_Conquer/quick_sort.s: Divide_Conquer/quick_sort.cpp.s
+LinkedList/BucketSort.s: LinkedList/BucketSort.cpp.s
 
-.PHONY : Divide_Conquer/quick_sort.s
+.PHONY : LinkedList/BucketSort.s
 
 # target to generate assembly for a file
-Divide_Conquer/quick_sort.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/Divide_Conquer/quick_sort.cpp.s
-.PHONY : Divide_Conquer/quick_sort.cpp.s
+LinkedList/BucketSort.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/LinkedList/BucketSort.cpp.s
+.PHONY : LinkedList/BucketSort.cpp.s
 
 # Help Target
 help:
@@ -179,9 +179,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... BOJproject"
-	@echo "... Divide_Conquer/quick_sort.o"
-	@echo "... Divide_Conquer/quick_sort.i"
-	@echo "... Divide_Conquer/quick_sort.s"
+	@echo "... LinkedList/BucketSort.o"
+	@echo "... LinkedList/BucketSort.i"
+	@echo "... LinkedList/BucketSort.s"
 .PHONY : help
 
 

@@ -1,107 +1,91 @@
-#define N 4
-#define MAX 10000
-#define NUMBER_CNT 5040
+#include <iostream>
+using namespace std;
+#define MAXN (1 << 15) // Add 함수 초대 호출 수
+#define MAXB (1 << 10) // 전체 bucket의 크기
+#define DIV 10 // 개별 buckey에 들어가는 숫자 개수, 2^10개
 
-//#include <iostream>
-//using namespace std;
+struct Node{
+    int val, idx;
+    Node *prev;
+    Node *next;
 
-typedef struct {
-    int hit;
-    int miss;
-} Result;
-// API
-extern Result query(int guess[]);
+    Node *alloc(int _val, int _idx, Node *_prev, Node *_next) {
+        this->val = _val;
+        this->idx = _idx;
+        this->prev = _prev;
+        this->next = _next;
 
-bool check[MAX]; // 최대 숫자 9876
-int used_number[NUMBER_CNT];
-bool check_init = true;
-int idx = 0;
-
-void init(){
-    if(check_init) {
-        check_init = false;
-        // 중복안되는 4자리 세팅
-        for(int i = 0; i < 10; i++) {
-            for(int j = 0; j < 10; j++) {
-                if(j == i) continue;
-                for(int k = 0; k < 10; k++) {
-                    if(i == k || j == k) continue;
-                    for(int p = 0; p < 10; p++) {
-                        if(i == p || j == p || k == p) continue;
-                        used_number[idx] = i*1000 + j*100 + k*10 + p;
-//                        cout << used_number[idx] << "\n";
-                        idx++;
-                    }
-                }
-            }
+        if(next) {
+            next->prev = this;
         }
+        return this;
     }
-    for(int i = 0; i < idx; i++) {
-        check[used_number[i]] = true;
+} buf[MAXN], bucket[MAXB];
+
+int bcnt, bucketCnt[MAXB];
+
+void init();
+void add(int data);
+int remove(int index);
+int access(int index);
+Node *getNode(int index);
+
+
+void init() {
+    bcnt = 0;
+    for(int i = 0; i < MAXB; i++) {
+        bucketCnt[i] = 0;
+        bucket[i].next = 0; // head->next --> null
     }
 }
 
-Result filtering(int failNum, int filteredNum) {
-    Result ret = {0,0};
-    int a[4], b[4];
-    a[0] = failNum / 1000;
-    a[1] = (failNum % 1000) / 100;
-    a[2] = (failNum % 100) / 10;
-    a[3] = (failNum % 10);
-    b[0] = filteredNum / 1000;
-    b[1] = (filteredNum % 1000) / 100;
-    b[2] = (filteredNum % 100) / 10;
-    b[3] = (filteredNum % 10);
-
-    if(a[0] == b[0]) ret.hit++;
-    if(a[1] == b[1]) ret.hit++;
-    if(a[2] == b[2]) ret.hit++;
-    if(a[3] == b[3]) ret.hit++;
-    for(int i = 0; i < 4; i++) {
-        for(int j = 0; j < 4; j++) {
-            if(i == j) continue;
-            if(b[i] == a[j]) ret.miss++;
-        }
+Node *getNode(int index) {
+    int sum = 0, i = 0;
+    // bucket cnt의 누적합 -> index --> break;
+    while(sum + bucketCnt[i] < index) {
+        sum += bucketCnt[i];
+        i++;
     }
-    return ret;
+    // bucket[i]는 index 번째 숫자가 존재하는 Linked List
+    // bucket[i](head) --> node_1 --> node_2 --> ... --> null
+    Node *ptr = &bucket[i];
+    while(ptr->next) {
+        sum++;
+        ptr = ptr->next;
+        if(index == sum) break;
+    }
+    return ptr;
 }
 
-void doUserImplementation(int guess[]) {
-    init();
+void add(int data) {
+    Node *ptr;
+    int index = data >> DIV;
+    ptr = &bucket[index];
+    bucketCnt[index]++;
 
-    // Implement a user's implementation function
-    //
-    // The array of guess[] is a return array that
-    // is your guess for what digits[] would be.
-
-    while(true) {
-        int tmp = 0;
-        for(int i = 0; i < NUMBER_CNT; i++) {
-            if(check[used_number[i]]) {
-                tmp = used_number[i];
-                guess[0] = tmp / 1000;
-                guess[1] = (tmp % 1000) / 100;
-                guess[2] = (tmp % 100) / 10;
-                guess[3] = (tmp % 10);
-                break;
-            }
-        }
-        Result query_resultA = query(guess);
-        if(query_resultA.hit == 4) break;
-        else check[tmp] = false;
-
-        for(int i = 0; i < NUMBER_CNT; i++) {
-            if(check[used_number[i]]) {
-                int filtered = used_number[i];
-                Result query_resultB = filtering(tmp, filtered);
-                if(query_resultA.hit != query_resultB.hit) {
-                    check[filtered] = false;
-                }
-                else if(query_resultA.miss != query_resultB.miss) {
-                    check[filtered] = false;
-                }
-            }
-        }
+    while(ptr -> next) {
+        if(ptr -> next ->val >= data) break;
+        ptr = ptr->next;
     }
+    ptr->next = buf[bcnt++].alloc(data,index,ptr,ptr->next);
+}
 
+int remove(int index) {
+    Node *ptr = getNode(index + 1);
+    ptr->prev->next = ptr->next;
+    if(ptr->next) ptr->next->prev = ptr->prev;
+    bucketCnt[ptr->idx]--;
+    return ptr->val;
+}
+
+int access(int index) {
+    Node *ptr = getNode(index + 1);
+    return ptr->val;
+}
+
+int main() {
+    cin.tie(NULL);
+    ios::sync_with_stdio(false);
+
+    return 0;
 }

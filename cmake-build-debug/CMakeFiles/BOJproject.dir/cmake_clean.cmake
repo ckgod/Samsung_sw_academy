@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "BOJproject"
   "BOJproject.pdb"
-  "CMakeFiles/BOJproject.dir/Divide_Conquer/quick_sort.cpp.o"
+  "CMakeFiles/BOJproject.dir/LinkedList/BucketSort.cpp.o"
 )
 
 # Per-language clean rules from dependency scanning.
