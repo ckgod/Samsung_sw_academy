@@ -6,7 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/Users/ckg/CLionProjects/BOJproject/Divide_Conquer/quick_sort.cpp
+/Users/ckg/CLionProjects/BOJproject/Divide_Conquer/english_study.cpp
 iostream
+-
+cstring
+-
+algorithm
 -
 

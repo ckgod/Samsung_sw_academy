@@ -143,32 +143,32 @@ BOJproject/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/build
 .PHONY : BOJproject/fast
 
-LinkedList/BucketSort.o: LinkedList/BucketSort.cpp.o
+Divide_Conquer/ad_time.o: Divide_Conquer/ad_time.cpp.o
 
-.PHONY : LinkedList/BucketSort.o
+.PHONY : Divide_Conquer/ad_time.o
 
 # target to build an object file
-LinkedList/BucketSort.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/LinkedList/BucketSort.cpp.o
-.PHONY : LinkedList/BucketSort.cpp.o
+Divide_Conquer/ad_time.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/Divide_Conquer/ad_time.cpp.o
+.PHONY : Divide_Conquer/ad_time.cpp.o
 
-LinkedList/BucketSort.i: LinkedList/BucketSort.cpp.i
+Divide_Conquer/ad_time.i: Divide_Conquer/ad_time.cpp.i
 
-.PHONY : LinkedList/BucketSort.i
+.PHONY : Divide_Conquer/ad_time.i
 
 # target to preprocess a source file
-LinkedList/BucketSort.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/LinkedList/BucketSort.cpp.i
-.PHONY : LinkedList/BucketSort.cpp.i
+Divide_Conquer/ad_time.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/Divide_Conquer/ad_time.cpp.i
+.PHONY : Divide_Conquer/ad_time.cpp.i
 
-LinkedList/BucketSort.s: LinkedList/BucketSort.cpp.s
+Divide_Conquer/ad_time.s: Divide_Conquer/ad_time.cpp.s
 
-.PHONY : LinkedList/BucketSort.s
+.PHONY : Divide_Conquer/ad_time.s
 
 # target to generate assembly for a file
-LinkedList/BucketSort.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/LinkedList/BucketSort.cpp.s
-.PHONY : LinkedList/BucketSort.cpp.s
+Divide_Conquer/ad_time.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/Divide_Conquer/ad_time.cpp.s
+.PHONY : Divide_Conquer/ad_time.cpp.s
 
 # Help Target
 help:
@@ -179,9 +179,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... BOJproject"
-	@echo "... LinkedList/BucketSort.o"
-	@echo "... LinkedList/BucketSort.i"
-	@echo "... LinkedList/BucketSort.s"
+	@echo "... Divide_Conquer/ad_time.o"
+	@echo "... Divide_Conquer/ad_time.i"
+	@echo "... Divide_Conquer/ad_time.s"
 .PHONY : help
 
 

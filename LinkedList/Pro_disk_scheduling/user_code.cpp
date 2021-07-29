@@ -1,5 +1,4 @@
-#include <iostream>
-using namespace std;
+const int MAX = 100000;
 #define MAXN (1 << 15) // Add 함수 초대 호출 수
 #define MAXB (1 << 10) // 전체 bucket의 크기
 #define DIV 10 // 개별 bucket에 들어가는 숫자 개수, 2^10개
@@ -30,8 +29,40 @@ int remove(int index);
 int access(int index);
 Node *getNode(int index);
 
+void init(int track_size, int head){
+    // TO DO
+}
 
-void init() {
+void request(int track){
+    add(track);
+}
+
+int fcfs(){
+    int track_no = -1;	// TO DO : Need to be changed
+
+    return track_no;
+}
+
+int sstf(){
+    int track_no = -1;	// TO DO : Need to be changed
+
+    return track_no;
+}
+
+int look(){
+    int track_no = -1;	// TO DO : Need to be changed
+
+    return track_no;
+}
+
+int clook(){
+    int track_no = -1;	// TO DO : Need to be changed
+
+    return track_no;
+}
+
+
+void initBucket() {
     bcnt = 0;
     for(int i = 0; i < MAXB; i++) {
         bucketCnt[i] = 0;
@@ -83,9 +114,3 @@ int access(int index) {
     return ptr->val;
 }
 
-int main() {
-    cin.tie(NULL);
-    ios::sync_with_stdio(false);
-
-    return 0;
-}

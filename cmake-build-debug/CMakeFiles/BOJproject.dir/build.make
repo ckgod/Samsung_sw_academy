@@ -77,27 +77,27 @@ include CMakeFiles/BOJproject.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/BOJproject.dir/flags.make
 
-CMakeFiles/BOJproject.dir/LinkedList/BucketSort.cpp.o: CMakeFiles/BOJproject.dir/flags.make
-CMakeFiles/BOJproject.dir/LinkedList/BucketSort.cpp.o: ../LinkedList/BucketSort.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ckg/CLionProjects/BOJproject/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/BOJproject.dir/LinkedList/BucketSort.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BOJproject.dir/LinkedList/BucketSort.cpp.o -c /Users/ckg/CLionProjects/BOJproject/LinkedList/BucketSort.cpp
+CMakeFiles/BOJproject.dir/Divide_Conquer/ad_time.cpp.o: CMakeFiles/BOJproject.dir/flags.make
+CMakeFiles/BOJproject.dir/Divide_Conquer/ad_time.cpp.o: ../Divide_Conquer/ad_time.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ckg/CLionProjects/BOJproject/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/BOJproject.dir/Divide_Conquer/ad_time.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BOJproject.dir/Divide_Conquer/ad_time.cpp.o -c /Users/ckg/CLionProjects/BOJproject/Divide_Conquer/ad_time.cpp
 
-CMakeFiles/BOJproject.dir/LinkedList/BucketSort.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BOJproject.dir/LinkedList/BucketSort.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ckg/CLionProjects/BOJproject/LinkedList/BucketSort.cpp > CMakeFiles/BOJproject.dir/LinkedList/BucketSort.cpp.i
+CMakeFiles/BOJproject.dir/Divide_Conquer/ad_time.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BOJproject.dir/Divide_Conquer/ad_time.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ckg/CLionProjects/BOJproject/Divide_Conquer/ad_time.cpp > CMakeFiles/BOJproject.dir/Divide_Conquer/ad_time.cpp.i
 
-CMakeFiles/BOJproject.dir/LinkedList/BucketSort.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BOJproject.dir/LinkedList/BucketSort.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ckg/CLionProjects/BOJproject/LinkedList/BucketSort.cpp -o CMakeFiles/BOJproject.dir/LinkedList/BucketSort.cpp.s
+CMakeFiles/BOJproject.dir/Divide_Conquer/ad_time.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BOJproject.dir/Divide_Conquer/ad_time.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ckg/CLionProjects/BOJproject/Divide_Conquer/ad_time.cpp -o CMakeFiles/BOJproject.dir/Divide_Conquer/ad_time.cpp.s
 
 # Object files for target BOJproject
 BOJproject_OBJECTS = \
-"CMakeFiles/BOJproject.dir/LinkedList/BucketSort.cpp.o"
+"CMakeFiles/BOJproject.dir/Divide_Conquer/ad_time.cpp.o"
 
 # External object files for target BOJproject
 BOJproject_EXTERNAL_OBJECTS =
 
-BOJproject: CMakeFiles/BOJproject.dir/LinkedList/BucketSort.cpp.o
+BOJproject: CMakeFiles/BOJproject.dir/Divide_Conquer/ad_time.cpp.o
 BOJproject: CMakeFiles/BOJproject.dir/build.make
 BOJproject: CMakeFiles/BOJproject.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/ckg/CLionProjects/BOJproject/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable BOJproject"
