@@ -143,32 +143,59 @@ BOJproject/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/build
 .PHONY : BOJproject/fast
 
-Divide_Conquer/ad_time.o: Divide_Conquer/ad_time.cpp.o
+graph/dfs_main.o: graph/dfs_main.cpp.o
 
-.PHONY : Divide_Conquer/ad_time.o
+.PHONY : graph/dfs_main.o
 
 # target to build an object file
-Divide_Conquer/ad_time.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/Divide_Conquer/ad_time.cpp.o
-.PHONY : Divide_Conquer/ad_time.cpp.o
+graph/dfs_main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/graph/dfs_main.cpp.o
+.PHONY : graph/dfs_main.cpp.o
 
-Divide_Conquer/ad_time.i: Divide_Conquer/ad_time.cpp.i
+graph/dfs_main.i: graph/dfs_main.cpp.i
 
-.PHONY : Divide_Conquer/ad_time.i
+.PHONY : graph/dfs_main.i
 
 # target to preprocess a source file
-Divide_Conquer/ad_time.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/Divide_Conquer/ad_time.cpp.i
-.PHONY : Divide_Conquer/ad_time.cpp.i
+graph/dfs_main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/graph/dfs_main.cpp.i
+.PHONY : graph/dfs_main.cpp.i
 
-Divide_Conquer/ad_time.s: Divide_Conquer/ad_time.cpp.s
+graph/dfs_main.s: graph/dfs_main.cpp.s
 
-.PHONY : Divide_Conquer/ad_time.s
+.PHONY : graph/dfs_main.s
 
 # target to generate assembly for a file
-Divide_Conquer/ad_time.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/Divide_Conquer/ad_time.cpp.s
-.PHONY : Divide_Conquer/ad_time.cpp.s
+graph/dfs_main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/graph/dfs_main.cpp.s
+.PHONY : graph/dfs_main.cpp.s
+
+graph/dfs_user.o: graph/dfs_user.cpp.o
+
+.PHONY : graph/dfs_user.o
+
+# target to build an object file
+graph/dfs_user.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/graph/dfs_user.cpp.o
+.PHONY : graph/dfs_user.cpp.o
+
+graph/dfs_user.i: graph/dfs_user.cpp.i
+
+.PHONY : graph/dfs_user.i
+
+# target to preprocess a source file
+graph/dfs_user.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/graph/dfs_user.cpp.i
+.PHONY : graph/dfs_user.cpp.i
+
+graph/dfs_user.s: graph/dfs_user.cpp.s
+
+.PHONY : graph/dfs_user.s
+
+# target to generate assembly for a file
+graph/dfs_user.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/graph/dfs_user.cpp.s
+.PHONY : graph/dfs_user.cpp.s
 
 # Help Target
 help:
@@ -179,9 +206,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... BOJproject"
-	@echo "... Divide_Conquer/ad_time.o"
-	@echo "... Divide_Conquer/ad_time.i"
-	@echo "... Divide_Conquer/ad_time.s"
+	@echo "... graph/dfs_main.o"
+	@echo "... graph/dfs_main.i"
+	@echo "... graph/dfs_main.s"
+	@echo "... graph/dfs_user.o"
+	@echo "... graph/dfs_user.i"
+	@echo "... graph/dfs_user.s"
 .PHONY : help
 
 

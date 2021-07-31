@@ -1,33 +1,22 @@
 #include <iostream>
 #include <cstring>
 #include <algorithm>
+#include <vector>
 using namespace std;
-#define MAXN 1000001
-int n,p;
-bool arr[MAXN];
 
-int solve(int p) {
-    int ret = 0;
-    int s = 0,e = 0;
-    int check_cnt = p;
-    while(e != MAXN) {
-        if(arr[e]) {
-            e++;
-            ret = max(e-s, ret);
-        }
-        else {
-            if(!check_cnt) { // 체크다함
-                ret = max(ret, e-s);
-                if(!arr[s]) check_cnt++;
-                s++;
-            }
-            else {
-                check_cnt--;
-                e++;
-            }
-        }
+int L,N,ans;
+vector<pair<int,int>> peek;
+
+int S[100001];
+int A[100000], B[100000];
+
+void b_search(int s, int e) {
+
+    while(s <= e) {
+        int m = (s+e)/2;
+
+
     }
-    return ret;
 }
 
 int main() {
@@ -35,14 +24,15 @@ int main() {
     ios::sync_with_stdio(false);
     int T; cin >> T;
     for(int tc = 1; tc <= T; tc++) {
-        memset(arr,0,sizeof(arr));
-        cin >> n >> p;
-        for(int i = 0; i < n; i++) {
-            int t; cin >> t;
-            arr[t] = true;
+        cin >> L >> N;
+        for(int i = 0; i < N; i++) {
+            cin >> A[i] >> B[i];
+            S[i+1] = S[i] + (B[i] - A[i]);
+        }
+        for(int i = 0; i <= N; i++) {
+            cout << i << " : " << S[i] << "\n";
         }
 
-        cout << "#" << tc << " " << solve(p) << "\n";
     }
     return 0;
 }
