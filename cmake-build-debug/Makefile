@@ -143,59 +143,32 @@ BOJproject/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/build
 .PHONY : BOJproject/fast
 
-graph/bfs_main.o: graph/bfs_main.cpp.o
+graph/process_connect.o: graph/process_connect.cpp.o
 
-.PHONY : graph/bfs_main.o
-
-# target to build an object file
-graph/bfs_main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/graph/bfs_main.cpp.o
-.PHONY : graph/bfs_main.cpp.o
-
-graph/bfs_main.i: graph/bfs_main.cpp.i
-
-.PHONY : graph/bfs_main.i
-
-# target to preprocess a source file
-graph/bfs_main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/graph/bfs_main.cpp.i
-.PHONY : graph/bfs_main.cpp.i
-
-graph/bfs_main.s: graph/bfs_main.cpp.s
-
-.PHONY : graph/bfs_main.s
-
-# target to generate assembly for a file
-graph/bfs_main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/graph/bfs_main.cpp.s
-.PHONY : graph/bfs_main.cpp.s
-
-graph/bfs_user.o: graph/bfs_user.cpp.o
-
-.PHONY : graph/bfs_user.o
+.PHONY : graph/process_connect.o
 
 # target to build an object file
-graph/bfs_user.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/graph/bfs_user.cpp.o
-.PHONY : graph/bfs_user.cpp.o
+graph/process_connect.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/graph/process_connect.cpp.o
+.PHONY : graph/process_connect.cpp.o
 
-graph/bfs_user.i: graph/bfs_user.cpp.i
+graph/process_connect.i: graph/process_connect.cpp.i
 
-.PHONY : graph/bfs_user.i
+.PHONY : graph/process_connect.i
 
 # target to preprocess a source file
-graph/bfs_user.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/graph/bfs_user.cpp.i
-.PHONY : graph/bfs_user.cpp.i
+graph/process_connect.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/graph/process_connect.cpp.i
+.PHONY : graph/process_connect.cpp.i
 
-graph/bfs_user.s: graph/bfs_user.cpp.s
+graph/process_connect.s: graph/process_connect.cpp.s
 
-.PHONY : graph/bfs_user.s
+.PHONY : graph/process_connect.s
 
 # target to generate assembly for a file
-graph/bfs_user.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/graph/bfs_user.cpp.s
-.PHONY : graph/bfs_user.cpp.s
+graph/process_connect.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/graph/process_connect.cpp.s
+.PHONY : graph/process_connect.cpp.s
 
 # Help Target
 help:
@@ -206,12 +179,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... BOJproject"
-	@echo "... graph/bfs_main.o"
-	@echo "... graph/bfs_main.i"
-	@echo "... graph/bfs_main.s"
-	@echo "... graph/bfs_user.o"
-	@echo "... graph/bfs_user.i"
-	@echo "... graph/bfs_user.s"
+	@echo "... graph/process_connect.o"
+	@echo "... graph/process_connect.i"
+	@echo "... graph/process_connect.s"
 .PHONY : help
 
 

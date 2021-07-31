@@ -3,4 +3,4 @@ project(BOJproject)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(BOJproject graph/bfs_main.cpp graph/bfs_user.cpp)
+add_executable(BOJproject graph/process_connect.cpp)

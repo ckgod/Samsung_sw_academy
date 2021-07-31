@@ -1,8 +1,7 @@
 file(REMOVE_RECURSE
   "BOJproject"
   "BOJproject.pdb"
-  "CMakeFiles/BOJproject.dir/graph/bfs_main.cpp.o"
-  "CMakeFiles/BOJproject.dir/graph/bfs_user.cpp.o"
+  "CMakeFiles/BOJproject.dir/graph/process_connect.cpp.o"
 )
 
 # Per-language clean rules from dependency scanning.
