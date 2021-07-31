@@ -143,59 +143,59 @@ BOJproject/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/build
 .PHONY : BOJproject/fast
 
-graph/dfs_main.o: graph/dfs_main.cpp.o
+graph/bfs_main.o: graph/bfs_main.cpp.o
 
-.PHONY : graph/dfs_main.o
-
-# target to build an object file
-graph/dfs_main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/graph/dfs_main.cpp.o
-.PHONY : graph/dfs_main.cpp.o
-
-graph/dfs_main.i: graph/dfs_main.cpp.i
-
-.PHONY : graph/dfs_main.i
-
-# target to preprocess a source file
-graph/dfs_main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/graph/dfs_main.cpp.i
-.PHONY : graph/dfs_main.cpp.i
-
-graph/dfs_main.s: graph/dfs_main.cpp.s
-
-.PHONY : graph/dfs_main.s
-
-# target to generate assembly for a file
-graph/dfs_main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/graph/dfs_main.cpp.s
-.PHONY : graph/dfs_main.cpp.s
-
-graph/dfs_user.o: graph/dfs_user.cpp.o
-
-.PHONY : graph/dfs_user.o
+.PHONY : graph/bfs_main.o
 
 # target to build an object file
-graph/dfs_user.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/graph/dfs_user.cpp.o
-.PHONY : graph/dfs_user.cpp.o
+graph/bfs_main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/graph/bfs_main.cpp.o
+.PHONY : graph/bfs_main.cpp.o
 
-graph/dfs_user.i: graph/dfs_user.cpp.i
+graph/bfs_main.i: graph/bfs_main.cpp.i
 
-.PHONY : graph/dfs_user.i
+.PHONY : graph/bfs_main.i
 
 # target to preprocess a source file
-graph/dfs_user.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/graph/dfs_user.cpp.i
-.PHONY : graph/dfs_user.cpp.i
+graph/bfs_main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/graph/bfs_main.cpp.i
+.PHONY : graph/bfs_main.cpp.i
 
-graph/dfs_user.s: graph/dfs_user.cpp.s
+graph/bfs_main.s: graph/bfs_main.cpp.s
 
-.PHONY : graph/dfs_user.s
+.PHONY : graph/bfs_main.s
 
 # target to generate assembly for a file
-graph/dfs_user.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/graph/dfs_user.cpp.s
-.PHONY : graph/dfs_user.cpp.s
+graph/bfs_main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/graph/bfs_main.cpp.s
+.PHONY : graph/bfs_main.cpp.s
+
+graph/bfs_user.o: graph/bfs_user.cpp.o
+
+.PHONY : graph/bfs_user.o
+
+# target to build an object file
+graph/bfs_user.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/graph/bfs_user.cpp.o
+.PHONY : graph/bfs_user.cpp.o
+
+graph/bfs_user.i: graph/bfs_user.cpp.i
+
+.PHONY : graph/bfs_user.i
+
+# target to preprocess a source file
+graph/bfs_user.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/graph/bfs_user.cpp.i
+.PHONY : graph/bfs_user.cpp.i
+
+graph/bfs_user.s: graph/bfs_user.cpp.s
+
+.PHONY : graph/bfs_user.s
+
+# target to generate assembly for a file
+graph/bfs_user.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/graph/bfs_user.cpp.s
+.PHONY : graph/bfs_user.cpp.s
 
 # Help Target
 help:
@@ -206,12 +206,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... BOJproject"
-	@echo "... graph/dfs_main.o"
-	@echo "... graph/dfs_main.i"
-	@echo "... graph/dfs_main.s"
-	@echo "... graph/dfs_user.o"
-	@echo "... graph/dfs_user.i"
-	@echo "... graph/dfs_user.s"
+	@echo "... graph/bfs_main.o"
+	@echo "... graph/bfs_main.i"
+	@echo "... graph/bfs_main.s"
+	@echo "... graph/bfs_user.o"
+	@echo "... graph/bfs_user.i"
+	@echo "... graph/bfs_user.s"
 .PHONY : help
 
 
