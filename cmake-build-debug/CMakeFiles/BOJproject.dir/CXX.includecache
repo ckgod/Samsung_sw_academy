@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/Users/ckg/CLionProjects/BOJproject/graph/make_one.cpp
+/Users/ckg/CLionProjects/BOJproject/graph/pro.cpp
 iostream
 -
-vector
--
 algorithm
+-
+vector
 -
 
