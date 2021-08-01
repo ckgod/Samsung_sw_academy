@@ -143,32 +143,32 @@ BOJproject/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/build
 .PHONY : BOJproject/fast
 
-base.o: base.cpp.o
+graph/make_one.o: graph/make_one.cpp.o
 
-.PHONY : base.o
+.PHONY : graph/make_one.o
 
 # target to build an object file
-base.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/base.cpp.o
-.PHONY : base.cpp.o
+graph/make_one.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/graph/make_one.cpp.o
+.PHONY : graph/make_one.cpp.o
 
-base.i: base.cpp.i
+graph/make_one.i: graph/make_one.cpp.i
 
-.PHONY : base.i
+.PHONY : graph/make_one.i
 
 # target to preprocess a source file
-base.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/base.cpp.i
-.PHONY : base.cpp.i
+graph/make_one.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/graph/make_one.cpp.i
+.PHONY : graph/make_one.cpp.i
 
-base.s: base.cpp.s
+graph/make_one.s: graph/make_one.cpp.s
 
-.PHONY : base.s
+.PHONY : graph/make_one.s
 
 # target to generate assembly for a file
-base.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/base.cpp.s
-.PHONY : base.cpp.s
+graph/make_one.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/graph/make_one.cpp.s
+.PHONY : graph/make_one.cpp.s
 
 # Help Target
 help:
@@ -179,9 +179,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... BOJproject"
-	@echo "... base.o"
-	@echo "... base.i"
-	@echo "... base.s"
+	@echo "... graph/make_one.o"
+	@echo "... graph/make_one.i"
+	@echo "... graph/make_one.s"
 .PHONY : help
 
 

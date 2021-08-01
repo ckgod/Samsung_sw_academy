@@ -3,4 +3,4 @@ project(BOJproject)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(BOJproject base.cpp)
+add_executable(BOJproject graph/make_one.cpp)
