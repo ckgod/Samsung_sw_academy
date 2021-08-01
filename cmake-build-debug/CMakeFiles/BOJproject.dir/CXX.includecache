@@ -6,9 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/Users/ckg/CLionProjects/BOJproject/graph/process_connect.cpp
+/Users/ckg/CLionProjects/BOJproject/base.cpp
 iostream
 -
+algorithm
+-
 vector
+-
+cstring
+-
+queue
 -
 

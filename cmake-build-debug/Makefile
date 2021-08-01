@@ -143,32 +143,32 @@ BOJproject/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/build
 .PHONY : BOJproject/fast
 
-graph/process_connect.o: graph/process_connect.cpp.o
+base.o: base.cpp.o
 
-.PHONY : graph/process_connect.o
+.PHONY : base.o
 
 # target to build an object file
-graph/process_connect.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/graph/process_connect.cpp.o
-.PHONY : graph/process_connect.cpp.o
+base.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/base.cpp.o
+.PHONY : base.cpp.o
 
-graph/process_connect.i: graph/process_connect.cpp.i
+base.i: base.cpp.i
 
-.PHONY : graph/process_connect.i
+.PHONY : base.i
 
 # target to preprocess a source file
-graph/process_connect.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/graph/process_connect.cpp.i
-.PHONY : graph/process_connect.cpp.i
+base.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/base.cpp.i
+.PHONY : base.cpp.i
 
-graph/process_connect.s: graph/process_connect.cpp.s
+base.s: base.cpp.s
 
-.PHONY : graph/process_connect.s
+.PHONY : base.s
 
 # target to generate assembly for a file
-graph/process_connect.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/graph/process_connect.cpp.s
-.PHONY : graph/process_connect.cpp.s
+base.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/base.cpp.s
+.PHONY : base.cpp.s
 
 # Help Target
 help:
@@ -179,9 +179,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... BOJproject"
-	@echo "... graph/process_connect.o"
-	@echo "... graph/process_connect.i"
-	@echo "... graph/process_connect.s"
+	@echo "... base.o"
+	@echo "... base.i"
+	@echo "... base.s"
 .PHONY : help
 
 

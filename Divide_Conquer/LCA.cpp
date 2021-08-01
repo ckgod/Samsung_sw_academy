@@ -1,48 +1,45 @@
 #include <iostream>
 #include <algorithm>
 #include <vector>
-#include <cstring>
+#include <queue>
 using namespace std;
 
-vector<int> tree[10001];
-bool visit[10001];
-int dep[10001];
-int dp[10001][21];
+int n, m;
+vector<pair<int, int>> tree[100001];
+bool visit[100001];
+int depth[100001];
+int dp[100001][21];
+int dist[100001][21];
+queue<int> q;
 
-void init() {
-    memset(visit, 0, sizeof(visit));
-    memset(dp,0,sizeof(dp));
-    memset(dep, 0 , sizeof(dep));
-    for(int i = 0; i < 10001; i++) {
-        tree[i].clear();
-    }
-}
-
-void dfs(int cur, int d) {
+void dfs(int cur, int dept) {
     visit[cur] = true;
-    dep[cur] = d;
+    depth[cur] = dept;
     for (int i = 0; i < tree[cur].size(); i++) {
-        int next = tree[cur][i];
+        int next = tree[cur][i].first;
+        int dis = tree[cur][i].second;
         if (visit[next]) continue;
         dp[next][0] = cur;
-        dfs(next, d + 1);
+        dist[next][0] = dis;
+        dfs(next, dept + 1);
     }
 }
 
-void func(int n) {
+void initDP() {
     for (int i = 1; i < 21; i++) {
         for (int j = 1; j <= n; j++) {
             dp[j][i] = dp[dp[j][i - 1]][i - 1];
+            dist[j][i] = dist[j][i - 1] + dist[dp[j][i - 1]][i - 1];
         }
     }
 }
 
 int lca(int n1, int n2) {
-    if (dep[n1] > dep[n2]) {
+    if (depth[n1] > depth[n2]) {
         swap(n1, n2);
     }
     for (int i = 20; i >= 0; i--) {
-        if (dep[n2] - dep[n1] >= (1 << i)) {
+        if (depth[n2] - depth[n1] >= (1 << i)) {
             n2 = dp[n2][i];
         }
     }
@@ -56,13 +53,27 @@ int lca(int n1, int n2) {
     return dp[n1][0];
 }
 
-int counting_tree(int root) {
-    int ret = 1;
-    for(auto i : tree[root]) {
-        if(dep[i] <= dep[root]) continue;
-        ret += counting_tree(i);
+int getDist(int a, int b) {
+    int a, b;
+    cin >> a >> b;
+    int commonP = lca(a, b);
+    int aDC = depth[a] - depth[commonP];
+    int bDC = depth[b] - depth[commonP];
+    int disA = 0;
+    int disB = 0;
+    for (int i = 20; i >= 0; i--) {
+        if (aDC >= (1 << i)) {
+            disA += dist[a][i];
+            a = dp[a][i];
+            aDC -= (1 << i);
+        }
+        if (bDC >= (1 << i)) {
+            disB += dist[b][i];
+            b = dp[b][i];
+            bDC -= (1 << i);
+        }
     }
-    return ret;
+    return disA + disB;
 }
 
 int main() {
@@ -70,21 +81,26 @@ int main() {
     ios::sync_with_stdio(false);
     int T; cin >> T;
     for(int tc = 1; tc <= T; tc++) {
-        init();
-        int v,e,a,b; cin >> v >> e >> a >> b;
-        for(int i = 0; i < e; i++) {
-            int p,c; cin >> p >> c;
-            tree[p].push_back(c);
-            tree[c].push_back(p);
+        cin >> n;
+        for(int i = 2; i < n+2; i++) {
+            int t; cin >> t;
+            tree[i].push_back({t,1});
+            tree[t].push_back({i,1});
         }
-        dfs(1, 0);
-        func(v);
+        dfs(1,0);
+        initDP();
+        q.push(1);
+        visit[1] = true;
+        while(!q.empty()) {
+            int cur = q.front();
+            q.pop();
+            for
 
-        int lca_num = lca(a,b);
-        int lca_cnt = counting_tree(lca_num);
+        }
 
-        cout << "#" << tc << " " << lca_num << " " << lca_cnt << "\n";
+
     }
+
 
     return 0;
 }
