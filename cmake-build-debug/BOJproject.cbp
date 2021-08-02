@@ -80,7 +80,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/ckg/CLionProjects/BOJproject/graph/pro.cpp">
+		<Unit filename="/Users/ckg/CLionProjects/BOJproject/tree/treeImpl.cpp">
 			<Option target="BOJproject"/>
 		</Unit>
 		<Unit filename="/Users/ckg/CLionProjects/BOJproject/CMakeLists.txt">

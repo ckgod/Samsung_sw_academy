@@ -3,4 +3,4 @@ project(BOJproject)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(BOJproject graph/pro.cpp)
+add_executable(BOJproject tree/treeImpl.cpp)

@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/ckg/CLionProjects/BOJproject/graph/pro.cpp" "/Users/ckg/CLionProjects/BOJproject/cmake-build-debug/CMakeFiles/BOJproject.dir/graph/pro.cpp.o"
+  "/Users/ckg/CLionProjects/BOJproject/tree/treeImpl.cpp" "/Users/ckg/CLionProjects/BOJproject/cmake-build-debug/CMakeFiles/BOJproject.dir/tree/treeImpl.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

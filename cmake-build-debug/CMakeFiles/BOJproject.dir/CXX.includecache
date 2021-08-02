@@ -6,11 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/Users/ckg/CLionProjects/BOJproject/graph/pro.cpp
+/Users/ckg/CLionProjects/BOJproject/tree/prob1.cpp
 iostream
 -
-algorithm
--
-vector
+string
 -
 
