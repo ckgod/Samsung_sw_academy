@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/Users/ckg/CLionProjects/BOJproject/tree/prob3.cpp
+/Users/ckg/CLionProjects/BOJproject/heap/heap_impl.cpp
 iostream
 -
-string
+stdlib.h
 -
 

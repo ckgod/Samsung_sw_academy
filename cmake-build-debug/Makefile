@@ -143,32 +143,32 @@ BOJproject/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/build
 .PHONY : BOJproject/fast
 
-tree/prob3.o: tree/prob3.cpp.o
+heap/heap_impl.o: heap/heap_impl.cpp.o
 
-.PHONY : tree/prob3.o
+.PHONY : heap/heap_impl.o
 
 # target to build an object file
-tree/prob3.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/tree/prob3.cpp.o
-.PHONY : tree/prob3.cpp.o
+heap/heap_impl.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/heap/heap_impl.cpp.o
+.PHONY : heap/heap_impl.cpp.o
 
-tree/prob3.i: tree/prob3.cpp.i
+heap/heap_impl.i: heap/heap_impl.cpp.i
 
-.PHONY : tree/prob3.i
+.PHONY : heap/heap_impl.i
 
 # target to preprocess a source file
-tree/prob3.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/tree/prob3.cpp.i
-.PHONY : tree/prob3.cpp.i
+heap/heap_impl.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/heap/heap_impl.cpp.i
+.PHONY : heap/heap_impl.cpp.i
 
-tree/prob3.s: tree/prob3.cpp.s
+heap/heap_impl.s: heap/heap_impl.cpp.s
 
-.PHONY : tree/prob3.s
+.PHONY : heap/heap_impl.s
 
 # target to generate assembly for a file
-tree/prob3.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/tree/prob3.cpp.s
-.PHONY : tree/prob3.cpp.s
+heap/heap_impl.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/heap/heap_impl.cpp.s
+.PHONY : heap/heap_impl.cpp.s
 
 # Help Target
 help:
@@ -179,9 +179,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... BOJproject"
-	@echo "... tree/prob3.o"
-	@echo "... tree/prob3.i"
-	@echo "... tree/prob3.s"
+	@echo "... heap/heap_impl.o"
+	@echo "... heap/heap_impl.i"
+	@echo "... heap/heap_impl.s"
 .PHONY : help
 
 
