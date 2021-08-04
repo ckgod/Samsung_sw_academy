@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "BOJproject"
   "BOJproject.pdb"
-  "CMakeFiles/BOJproject.dir/tree/treeImpl.cpp.o"
+  "CMakeFiles/BOJproject.dir/tree/prob3.cpp.o"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -1,34 +1,29 @@
 #include <iostream>
 #include <cmath>
-#include <string>
-#include <algorithm>
-#include <vector>
 using namespace std;
+#define ll long long
 
-int n,m;
-int parent[200001];
-int groupSize[200001];
-
-int find(int n) {
-    if(parent[n] == n) return n;
-    else return parent[n] = find(parent[n]);
-}
-
-void merge(int n1, int n2) {
-    n1 = find(n1);
-    n2 = find(n2);
-
-}
+ll n;
+double ans = 1;
 
 int main() {
     cin.tie(NULL);
     ios::sync_with_stdio(false);
-    cin >> n >> m;
-    for(int i = 0; i < m; i++) {
-        int a,b; cin >> a >> b;
-
+    cin >> n;
+    ll sqrtN = sqrt(n);
+    ans = n;
+    for(ll i = 2; i <= sqrtN; i++) {
+        if(n % i == 0) { // 소인수
+            while(n % i == 0) {
+                n /= i;
+            }
+            ans *= (1.0 - (1.0/(double)i));
+        }
     }
-
+    if(n != 1) { // n이 1이면 없어져버림
+        ans *= (1.0 - (1.0/(double)n));
+    }
+    cout << (ll)ans;
 
     return 0;
 }

@@ -143,32 +143,32 @@ BOJproject/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/build
 .PHONY : BOJproject/fast
 
-tree/treeImpl.o: tree/treeImpl.cpp.o
+tree/prob3.o: tree/prob3.cpp.o
 
-.PHONY : tree/treeImpl.o
+.PHONY : tree/prob3.o
 
 # target to build an object file
-tree/treeImpl.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/tree/treeImpl.cpp.o
-.PHONY : tree/treeImpl.cpp.o
+tree/prob3.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/tree/prob3.cpp.o
+.PHONY : tree/prob3.cpp.o
 
-tree/treeImpl.i: tree/treeImpl.cpp.i
+tree/prob3.i: tree/prob3.cpp.i
 
-.PHONY : tree/treeImpl.i
+.PHONY : tree/prob3.i
 
 # target to preprocess a source file
-tree/treeImpl.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/tree/treeImpl.cpp.i
-.PHONY : tree/treeImpl.cpp.i
+tree/prob3.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/tree/prob3.cpp.i
+.PHONY : tree/prob3.cpp.i
 
-tree/treeImpl.s: tree/treeImpl.cpp.s
+tree/prob3.s: tree/prob3.cpp.s
 
-.PHONY : tree/treeImpl.s
+.PHONY : tree/prob3.s
 
 # target to generate assembly for a file
-tree/treeImpl.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/tree/treeImpl.cpp.s
-.PHONY : tree/treeImpl.cpp.s
+tree/prob3.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/tree/prob3.cpp.s
+.PHONY : tree/prob3.cpp.s
 
 # Help Target
 help:
@@ -179,9 +179,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... BOJproject"
-	@echo "... tree/treeImpl.o"
-	@echo "... tree/treeImpl.i"
-	@echo "... tree/treeImpl.s"
+	@echo "... tree/prob3.o"
+	@echo "... tree/prob3.i"
+	@echo "... tree/prob3.s"
 .PHONY : help
 
 
