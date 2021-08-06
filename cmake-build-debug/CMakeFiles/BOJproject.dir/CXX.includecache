@@ -6,9 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/Users/ckg/CLionProjects/BOJproject/heap/heap_impl.cpp
+/Users/ckg/CLionProjects/BOJproject/heap/partial_sort_user.cpp
 iostream
--
-stdlib.h
 -
 

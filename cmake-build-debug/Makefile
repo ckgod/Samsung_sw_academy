@@ -143,32 +143,59 @@ BOJproject/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/build
 .PHONY : BOJproject/fast
 
-heap/heap_impl.o: heap/heap_impl.cpp.o
+heap/partial_sort_main.o: heap/partial_sort_main.cpp.o
 
-.PHONY : heap/heap_impl.o
+.PHONY : heap/partial_sort_main.o
 
 # target to build an object file
-heap/heap_impl.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/heap/heap_impl.cpp.o
-.PHONY : heap/heap_impl.cpp.o
+heap/partial_sort_main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/heap/partial_sort_main.cpp.o
+.PHONY : heap/partial_sort_main.cpp.o
 
-heap/heap_impl.i: heap/heap_impl.cpp.i
+heap/partial_sort_main.i: heap/partial_sort_main.cpp.i
 
-.PHONY : heap/heap_impl.i
+.PHONY : heap/partial_sort_main.i
 
 # target to preprocess a source file
-heap/heap_impl.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/heap/heap_impl.cpp.i
-.PHONY : heap/heap_impl.cpp.i
+heap/partial_sort_main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/heap/partial_sort_main.cpp.i
+.PHONY : heap/partial_sort_main.cpp.i
 
-heap/heap_impl.s: heap/heap_impl.cpp.s
+heap/partial_sort_main.s: heap/partial_sort_main.cpp.s
 
-.PHONY : heap/heap_impl.s
+.PHONY : heap/partial_sort_main.s
 
 # target to generate assembly for a file
-heap/heap_impl.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/heap/heap_impl.cpp.s
-.PHONY : heap/heap_impl.cpp.s
+heap/partial_sort_main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/heap/partial_sort_main.cpp.s
+.PHONY : heap/partial_sort_main.cpp.s
+
+heap/partial_sort_user.o: heap/partial_sort_user.cpp.o
+
+.PHONY : heap/partial_sort_user.o
+
+# target to build an object file
+heap/partial_sort_user.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/heap/partial_sort_user.cpp.o
+.PHONY : heap/partial_sort_user.cpp.o
+
+heap/partial_sort_user.i: heap/partial_sort_user.cpp.i
+
+.PHONY : heap/partial_sort_user.i
+
+# target to preprocess a source file
+heap/partial_sort_user.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/heap/partial_sort_user.cpp.i
+.PHONY : heap/partial_sort_user.cpp.i
+
+heap/partial_sort_user.s: heap/partial_sort_user.cpp.s
+
+.PHONY : heap/partial_sort_user.s
+
+# target to generate assembly for a file
+heap/partial_sort_user.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/heap/partial_sort_user.cpp.s
+.PHONY : heap/partial_sort_user.cpp.s
 
 # Help Target
 help:
@@ -179,9 +206,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... BOJproject"
-	@echo "... heap/heap_impl.o"
-	@echo "... heap/heap_impl.i"
-	@echo "... heap/heap_impl.s"
+	@echo "... heap/partial_sort_main.o"
+	@echo "... heap/partial_sort_main.i"
+	@echo "... heap/partial_sort_main.s"
+	@echo "... heap/partial_sort_user.o"
+	@echo "... heap/partial_sort_user.i"
+	@echo "... heap/partial_sort_user.s"
 .PHONY : help
 
 

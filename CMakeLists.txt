@@ -3,4 +3,4 @@ project(BOJproject)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(BOJproject heap/heap_impl.cpp)
+add_executable(BOJproject heap/partial_sort_main.cpp heap/partial_sort_user.cpp)
