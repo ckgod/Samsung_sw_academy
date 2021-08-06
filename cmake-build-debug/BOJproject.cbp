@@ -80,10 +80,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/ckg/CLionProjects/BOJproject/heap/partial_sort_main.cpp">
-			<Option target="BOJproject"/>
-		</Unit>
-		<Unit filename="/Users/ckg/CLionProjects/BOJproject/heap/partial_sort_user.cpp">
+		<Unit filename="/Users/ckg/CLionProjects/BOJproject/heap/heap_prob3.cpp">
 			<Option target="BOJproject"/>
 		</Unit>
 		<Unit filename="/Users/ckg/CLionProjects/BOJproject/CMakeLists.txt">
