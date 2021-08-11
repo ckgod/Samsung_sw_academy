@@ -80,10 +80,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/ckg/CLionProjects/BOJproject/trie/trie_prob3_main.cpp">
-			<Option target="BOJproject"/>
-		</Unit>
-		<Unit filename="/Users/ckg/CLionProjects/BOJproject/trie/trie_prob3_user.cpp">
+		<Unit filename="/Users/ckg/CLionProjects/BOJproject/trie/trie_prob5.cpp">
 			<Option target="BOJproject"/>
 		</Unit>
 		<Unit filename="/Users/ckg/CLionProjects/BOJproject/CMakeLists.txt">

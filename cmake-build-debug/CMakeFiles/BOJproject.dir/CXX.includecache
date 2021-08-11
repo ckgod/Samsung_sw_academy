@@ -6,5 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/Users/ckg/CLionProjects/BOJproject/trie/trie_prob3_user.cpp
+/Users/ckg/CLionProjects/BOJproject/trie/trie_prob5.cpp
+iostream
+-
+algorithm
+-
 
