@@ -9,6 +9,7 @@ Trie* myAlloc();
 
 struct Trie{
     Trie* _children[26];
+    int tmpCnt = 0;
 
     void add(const char* word) {
         if(*word != 0) {
@@ -23,6 +24,17 @@ struct Trie{
             return nullptr;
         }
         return this;
+    }
+
+    void getWordCnt(const char* word, int bufferSize, int curLength) {
+        if(*word != 0) {
+            if(_children[*word -'a'] != nullptr) {
+                if(word + 1 == nullptr && curLength >= bufferSize) {
+                    tmpCnt++;
+                }
+                _children[*word -'a']->getWordCnt(word + 1, bufferSize, curLength+1);
+            }
+        }
     }
 
     void clear() {

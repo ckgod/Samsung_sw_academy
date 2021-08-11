@@ -6,7 +6,5 @@
 
 #IncludeRegexTransform: 
 
-/Users/ckg/CLionProjects/BOJproject/base.cpp
-iostream
--
+/Users/ckg/CLionProjects/BOJproject/trie/trie_prob3_user.cpp
 
