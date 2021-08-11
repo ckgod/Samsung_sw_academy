@@ -170,6 +170,33 @@ base.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/base.cpp.s
 .PHONY : base.cpp.s
 
+trie/trie_impl.o: trie/trie_impl.cpp.o
+
+.PHONY : trie/trie_impl.o
+
+# target to build an object file
+trie/trie_impl.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/trie/trie_impl.cpp.o
+.PHONY : trie/trie_impl.cpp.o
+
+trie/trie_impl.i: trie/trie_impl.cpp.i
+
+.PHONY : trie/trie_impl.i
+
+# target to preprocess a source file
+trie/trie_impl.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/trie/trie_impl.cpp.i
+.PHONY : trie/trie_impl.cpp.i
+
+trie/trie_impl.s: trie/trie_impl.cpp.s
+
+.PHONY : trie/trie_impl.s
+
+# target to generate assembly for a file
+trie/trie_impl.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/trie/trie_impl.cpp.s
+.PHONY : trie/trie_impl.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -182,6 +209,9 @@ help:
 	@echo "... base.o"
 	@echo "... base.i"
 	@echo "... base.s"
+	@echo "... trie/trie_impl.o"
+	@echo "... trie/trie_impl.i"
+	@echo "... trie/trie_impl.s"
 .PHONY : help
 
 
