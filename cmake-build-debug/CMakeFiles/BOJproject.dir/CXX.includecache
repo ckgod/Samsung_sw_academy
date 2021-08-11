@@ -6,13 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/Users/ckg/CLionProjects/BOJproject/heap/heap_prob3.cpp
+/Users/ckg/CLionProjects/BOJproject/base.cpp
 iostream
--
-vector
--
-algorithm
--
-queue
 -
 

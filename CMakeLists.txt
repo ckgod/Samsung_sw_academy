@@ -3,4 +3,4 @@ project(BOJproject)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(BOJproject heap/heap_prob3.cpp)
+add_executable(BOJproject base.cpp)
