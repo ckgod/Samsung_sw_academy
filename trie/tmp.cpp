@@ -83,7 +83,6 @@ vector<Query> existQuery;
 vector<Query> nonExistQuery;
 vector<Dic> dictionary;
 int ans[30001];
-ll sum;
 
 Trie* myAlloc() {
     Trie* ret = &Node[nodeCnt++];
@@ -100,76 +99,67 @@ void init() {
     dictionary.clear();
     nodeCnt = 0;
     root = myAlloc();
-    sum = 0;
 }
 
 int main() {
     cin.tie(NULL);
     ios::sync_with_stdio(false);
-    int T; cin >> T;
-    for(int tc = 1; tc <= T; tc++) {
-
-        init();
-        cin >> n;
-        for(int i = 0; i < n; i++) {
-            char str[31]; cin >> str;
-            root->add(str, i);
-            Dic tmp;
+    init();
+    cin >> n;
+    for(int i = 0; i < n; i++) {
+        char str[31]; cin >> str;
+        root->add(str, i);
+        Dic tmp;
+        mstrcpy(tmp.word, str);
+        tmp.queryExist = false;
+        dictionary.push_back(tmp);
+    }
+    cin >> n;
+    for(int i = 0; i < n; i++) {
+        char str[31]; cin >> str;
+        searchTime = 0;
+        Trie* tmp = root->get(str);
+        int findIdx = -1;
+        if(tmp) {
+            findIdx = tmp->idx;
+        }
+        if(findIdx == -1) { // 사전에 없을때
+            Query tmp;
+            tmp.idx = findIdx;
+            tmp.queryIdx = i;
             mstrcpy(tmp.word, str);
-            tmp.queryExist = false;
-            dictionary.push_back(tmp);
+            nonExistQuery.push_back(tmp);
         }
-        for(int i = 0; i < dictionary.size(); i++) {
-            cout << "dic word : " << dictionary[i].word << "\n";
+        else { // 사전에 있을때
+            Query tmp;
+            tmp.idx = findIdx;
+            tmp.queryIdx = i;
+            mstrcpy(tmp.word, str);
+            existQuery.push_back(tmp);
+            dictionary[findIdx].queryExist = true;
         }
-        cin >> n;
-        for(int i = 0; i < n; i++) {
-            char str[31]; cin >> str;
+    }
+    sort(existQuery.begin(), existQuery.end());
+    // 트라이 새로만들기
+    nodeCnt = 0;
+    root = myAlloc();
+    int queryIdx = 0;
+    for(int i = 0; i < dictionary.size(); i++) {
+        root->add(dictionary[i].word, i);
+        if(dictionary[i].queryExist) {
             searchTime = 0;
-            Trie* tmp = root->get(str);
-            int findIdx = -1;
-            if(tmp) {
-                findIdx = tmp->idx;
-            }
-            if(findIdx == -1) { // 사전에 없을때
-                Query tmp;
-                tmp.idx = findIdx;
-                tmp.queryIdx = i;
-                mstrcpy(tmp.word, str);
-                nonExistQuery.push_back(tmp);
-            }
-            else { // 사전에 있을때
-                Query tmp;
-                tmp.idx = findIdx;
-                tmp.queryIdx = i;
-                mstrcpy(tmp.word, str);
-                existQuery.push_back(tmp);
-                dictionary[findIdx].queryExist = true;
-            }
+            root->search(existQuery[queryIdx].word);
+            ans[existQuery[queryIdx].queryIdx] = searchTime;
+            queryIdx++;
         }
-        sort(existQuery.begin(), existQuery.end());
-        // 트라이 새로만들기
-        nodeCnt = 0;
-        root = myAlloc();
-        int queryIdx = 0;
-        for(int i = 0; i < dictionary.size(); i++) {
-            root->add(dictionary[i].word, i);
-            if(dictionary[i].queryExist) {
-                searchTime = 0;
-                root->search(existQuery[queryIdx].word);
-                ans[existQuery[queryIdx].queryIdx] = searchTime;
-                queryIdx++;
-            }
-        }
-        for(int i = 0; i < nonExistQuery.size(); i++) {
-            searchTime = 0;
-            root->search(nonExistQuery[i].word);
-            ans[nonExistQuery[i].queryIdx] = searchTime;
-        }
-        for(int i = 0; i < n; i++) {
-            sum += ans[i];
-        }
-        cout << "#" << tc << " " << sum <<"\n";
+    }
+    for(int i = 0; i < nonExistQuery.size(); i++) {
+        searchTime = 0;
+        root->search(nonExistQuery[i].word);
+        ans[nonExistQuery[i].queryIdx] = searchTime;
+    }
+    for(int i = 0; i < n; i++) {
+        cout << ans[i] << "\n";
     }
 
     return 0;

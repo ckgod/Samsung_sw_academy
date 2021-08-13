@@ -143,32 +143,59 @@ BOJproject/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/build
 .PHONY : BOJproject/fast
 
-trie/trie_prob5.o: trie/trie_prob5.cpp.o
+professional/pro_1_main.o: professional/pro_1_main.cpp.o
 
-.PHONY : trie/trie_prob5.o
+.PHONY : professional/pro_1_main.o
 
 # target to build an object file
-trie/trie_prob5.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/trie/trie_prob5.cpp.o
-.PHONY : trie/trie_prob5.cpp.o
+professional/pro_1_main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/professional/pro_1_main.cpp.o
+.PHONY : professional/pro_1_main.cpp.o
 
-trie/trie_prob5.i: trie/trie_prob5.cpp.i
+professional/pro_1_main.i: professional/pro_1_main.cpp.i
 
-.PHONY : trie/trie_prob5.i
+.PHONY : professional/pro_1_main.i
 
 # target to preprocess a source file
-trie/trie_prob5.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/trie/trie_prob5.cpp.i
-.PHONY : trie/trie_prob5.cpp.i
+professional/pro_1_main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/professional/pro_1_main.cpp.i
+.PHONY : professional/pro_1_main.cpp.i
 
-trie/trie_prob5.s: trie/trie_prob5.cpp.s
+professional/pro_1_main.s: professional/pro_1_main.cpp.s
 
-.PHONY : trie/trie_prob5.s
+.PHONY : professional/pro_1_main.s
 
 # target to generate assembly for a file
-trie/trie_prob5.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/trie/trie_prob5.cpp.s
-.PHONY : trie/trie_prob5.cpp.s
+professional/pro_1_main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/professional/pro_1_main.cpp.s
+.PHONY : professional/pro_1_main.cpp.s
+
+professional/pro_1_user.o: professional/pro_1_user.cpp.o
+
+.PHONY : professional/pro_1_user.o
+
+# target to build an object file
+professional/pro_1_user.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/professional/pro_1_user.cpp.o
+.PHONY : professional/pro_1_user.cpp.o
+
+professional/pro_1_user.i: professional/pro_1_user.cpp.i
+
+.PHONY : professional/pro_1_user.i
+
+# target to preprocess a source file
+professional/pro_1_user.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/professional/pro_1_user.cpp.i
+.PHONY : professional/pro_1_user.cpp.i
+
+professional/pro_1_user.s: professional/pro_1_user.cpp.s
+
+.PHONY : professional/pro_1_user.s
+
+# target to generate assembly for a file
+professional/pro_1_user.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/professional/pro_1_user.cpp.s
+.PHONY : professional/pro_1_user.cpp.s
 
 # Help Target
 help:
@@ -179,9 +206,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... BOJproject"
-	@echo "... trie/trie_prob5.o"
-	@echo "... trie/trie_prob5.i"
-	@echo "... trie/trie_prob5.s"
+	@echo "... professional/pro_1_main.o"
+	@echo "... professional/pro_1_main.i"
+	@echo "... professional/pro_1_main.s"
+	@echo "... professional/pro_1_user.o"
+	@echo "... professional/pro_1_user.i"
+	@echo "... professional/pro_1_user.s"
 .PHONY : help
 
 
