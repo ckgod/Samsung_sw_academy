@@ -80,6 +80,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/ckg/CLionProjects/BOJproject/hash/hash_impl.cpp">
+			<Option target="BOJproject"/>
+		</Unit>
 		<Unit filename="/Users/ckg/CLionProjects/BOJproject/professional/pro_1_main.cpp">
 			<Option target="BOJproject"/>
 		</Unit>

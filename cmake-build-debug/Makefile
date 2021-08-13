@@ -143,6 +143,33 @@ BOJproject/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/build
 .PHONY : BOJproject/fast
 
+hash/hash_impl.o: hash/hash_impl.cpp.o
+
+.PHONY : hash/hash_impl.o
+
+# target to build an object file
+hash/hash_impl.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/hash/hash_impl.cpp.o
+.PHONY : hash/hash_impl.cpp.o
+
+hash/hash_impl.i: hash/hash_impl.cpp.i
+
+.PHONY : hash/hash_impl.i
+
+# target to preprocess a source file
+hash/hash_impl.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/hash/hash_impl.cpp.i
+.PHONY : hash/hash_impl.cpp.i
+
+hash/hash_impl.s: hash/hash_impl.cpp.s
+
+.PHONY : hash/hash_impl.s
+
+# target to generate assembly for a file
+hash/hash_impl.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/hash/hash_impl.cpp.s
+.PHONY : hash/hash_impl.cpp.s
+
 professional/pro_1_main.o: professional/pro_1_main.cpp.o
 
 .PHONY : professional/pro_1_main.o
@@ -206,6 +233,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... BOJproject"
+	@echo "... hash/hash_impl.o"
+	@echo "... hash/hash_impl.i"
+	@echo "... hash/hash_impl.s"
 	@echo "... professional/pro_1_main.o"
 	@echo "... professional/pro_1_main.i"
 	@echo "... professional/pro_1_main.s"

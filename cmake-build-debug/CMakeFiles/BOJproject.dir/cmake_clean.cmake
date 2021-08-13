@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "BOJproject"
   "BOJproject.pdb"
+  "CMakeFiles/BOJproject.dir/hash/hash_impl.cpp.o"
   "CMakeFiles/BOJproject.dir/professional/pro_1_main.cpp.o"
   "CMakeFiles/BOJproject.dir/professional/pro_1_user.cpp.o"
 )
