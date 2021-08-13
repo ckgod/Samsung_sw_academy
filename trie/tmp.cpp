@@ -24,7 +24,7 @@ struct Query{
 void mstrcpy(char dest[], char src[]) {
     int c = 0;
     while((dest[c] = src[c]) != 0)
-        c++;
+        ++c;
 }
 
 struct Dic{

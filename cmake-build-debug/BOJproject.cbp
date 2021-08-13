@@ -80,13 +80,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/ckg/CLionProjects/BOJproject/hash/hash_impl.cpp">
+		<Unit filename="/Users/ckg/CLionProjects/BOJproject/professional/pro_2_main.cpp">
 			<Option target="BOJproject"/>
 		</Unit>
-		<Unit filename="/Users/ckg/CLionProjects/BOJproject/professional/pro_1_main.cpp">
+		<Unit filename="/Users/ckg/CLionProjects/BOJproject/professional/pro_2_user.cpp">
 			<Option target="BOJproject"/>
 		</Unit>
-		<Unit filename="/Users/ckg/CLionProjects/BOJproject/professional/pro_1_user.cpp">
+		<Unit filename="/Users/ckg/CLionProjects/BOJproject/string/kmp_algorithm.cpp">
 			<Option target="BOJproject"/>
 		</Unit>
 		<Unit filename="/Users/ckg/CLionProjects/BOJproject/CMakeLists.txt">

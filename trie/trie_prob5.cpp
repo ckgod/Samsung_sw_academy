@@ -24,7 +24,7 @@ struct Query{
 void mstrcpy(char dest[], char src[]) {
     int c = 0;
     while((dest[c] = src[c]) != 0)
-        c++;
+        ++c;
 }
 
 struct Dic{
@@ -119,9 +119,9 @@ int main() {
             tmp.queryExist = false;
             dictionary.push_back(tmp);
         }
-        for(int i = 0; i < dictionary.size(); i++) {
-            cout << "dic word : " << dictionary[i].word << "\n";
-        }
+//        for(int i = 0; i < dictionary.size(); i++) {
+//            cout << "dic word : " << dictionary[i].word << "\n";
+//        }
         cin >> n;
         for(int i = 0; i < n; i++) {
             char str[31]; cin >> str;
