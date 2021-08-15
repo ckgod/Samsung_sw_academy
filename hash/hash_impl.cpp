@@ -54,14 +54,12 @@ int bCnt;
 Node buf[MAXN];
 Node hashTable[HASH_SIZE];
 
-
 void init() {
     bCnt = 0;
     for (int i = 0; i < HASH_SIZE; ++i) {
         hashTable[i].next = 0;
     }
 }
-
 
 // djb2
 int getKey(char str[]) {

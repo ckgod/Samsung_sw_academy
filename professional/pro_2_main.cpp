@@ -3,6 +3,8 @@
 #endif
 
 #include <stdio.h>
+#include <iostream>
+using namespace std;
 
 extern void init(int n, char init_string[]);
 extern int change(char string_A[], char string_B[]);
@@ -35,6 +37,7 @@ static char string_A[4], string_B[4];
 int main() {
     setbuf(stdout, NULL);
 //	freopen("sample_input.txt", "r", stdin);
+;
     int T;
     scanf("%d", &T);
     int total_score = 0;
@@ -47,6 +50,7 @@ int main() {
             init_string[i] = pseudo_rand() % char_type + 'a';
         }
         init_string[init_string_len] = '\0';
+//        cout << init_string << "\n";
 
         init(init_string_len, init_string);
 
@@ -61,6 +65,7 @@ int main() {
             int user_ans = change(string_A, string_B);
             int ans;
             scanf("%d", &ans);
+            cout << "user ans : " << user_ans << "\n";
 
             if (ans != user_ans)
             {

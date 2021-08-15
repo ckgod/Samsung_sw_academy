@@ -6,7 +6,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/ckg/CLionProjects/BOJproject/professional/pro_2_main.cpp" "/Users/ckg/CLionProjects/BOJproject/cmake-build-debug/CMakeFiles/BOJproject.dir/professional/pro_2_main.cpp.o"
   "/Users/ckg/CLionProjects/BOJproject/professional/pro_2_user.cpp" "/Users/ckg/CLionProjects/BOJproject/cmake-build-debug/CMakeFiles/BOJproject.dir/professional/pro_2_user.cpp.o"
-  "/Users/ckg/CLionProjects/BOJproject/string/kmp_algorithm.cpp" "/Users/ckg/CLionProjects/BOJproject/cmake-build-debug/CMakeFiles/BOJproject.dir/string/kmp_algorithm.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

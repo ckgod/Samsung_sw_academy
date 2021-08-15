@@ -197,33 +197,6 @@ professional/pro_2_user.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/professional/pro_2_user.cpp.s
 .PHONY : professional/pro_2_user.cpp.s
 
-string/kmp_algorithm.o: string/kmp_algorithm.cpp.o
-
-.PHONY : string/kmp_algorithm.o
-
-# target to build an object file
-string/kmp_algorithm.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/string/kmp_algorithm.cpp.o
-.PHONY : string/kmp_algorithm.cpp.o
-
-string/kmp_algorithm.i: string/kmp_algorithm.cpp.i
-
-.PHONY : string/kmp_algorithm.i
-
-# target to preprocess a source file
-string/kmp_algorithm.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/string/kmp_algorithm.cpp.i
-.PHONY : string/kmp_algorithm.cpp.i
-
-string/kmp_algorithm.s: string/kmp_algorithm.cpp.s
-
-.PHONY : string/kmp_algorithm.s
-
-# target to generate assembly for a file
-string/kmp_algorithm.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/string/kmp_algorithm.cpp.s
-.PHONY : string/kmp_algorithm.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -239,9 +212,6 @@ help:
 	@echo "... professional/pro_2_user.o"
 	@echo "... professional/pro_2_user.i"
 	@echo "... professional/pro_2_user.s"
-	@echo "... string/kmp_algorithm.o"
-	@echo "... string/kmp_algorithm.i"
-	@echo "... string/kmp_algorithm.s"
 .PHONY : help
 
 

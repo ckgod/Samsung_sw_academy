@@ -6,13 +6,5 @@
 
 #IncludeRegexTransform: 
 
-/Users/ckg/CLionProjects/BOJproject/trie/tmp.cpp
-iostream
--
-algorithm
--
-vector
--
-cstring
--
+/Users/ckg/CLionProjects/BOJproject/professional/pro_2_user.cpp
 

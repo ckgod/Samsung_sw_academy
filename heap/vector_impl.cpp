@@ -31,6 +31,5 @@ struct vector {
     void pop_back() {
         //size를 감소시켰을때 capacity/4 와 같다면 절반으로 resize
         if (--n == N >> 2) resize(N >> 1);
-
     }
 };
