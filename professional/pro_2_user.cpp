@@ -13,11 +13,9 @@ unsigned long djb2(const char *str) {
 
 struct Node {
     int data;
-    int myIndex;
     Node *next;
     Node *prev;
 } indexList[MAX_NODE];
-
 
 struct Ind {
     Node *head;
@@ -31,21 +29,7 @@ Node *getNode(int data) {
     indexList[nodeCnt].data = data;
     indexList[nodeCnt].next = nullptr;
     indexList[nodeCnt].prev = nullptr;
-    indexList[nodeCnt].myIndex = nodeCnt;
     return &indexList[nodeCnt++];
-}
-
-void push_back_list(int idx, int data) {
-    Node *ptr = ind[idx].head->next;
-    while (ptr != ind[idx].tail) {
-        if (ptr->data > data) break;
-        ptr = ptr->next;
-    }
-    Node *newNode = getNode(data);
-    newNode->next = ptr;
-    newNode->prev = ptr->prev;
-    newNode->prev->next = newNode;
-    ptr->prev = newNode;
 }
 
 void push_back_node(int idx, Node* node) {
@@ -68,17 +52,6 @@ void init_push_list(int idx, int data) {
     ind[idx].tail->prev = newNode;
 }
 
-void removeNode(int idx, int data) {
-    Node *ptr = ind[idx].head->next;
-    while (ptr != ind[idx].tail) {
-        if (ptr->data == data) break;
-        ptr = ptr->next;
-    }
-    if (ptr == ind[idx].tail) return;
-    ptr->next->prev = ptr->prev;
-    ptr->prev->next = ptr->next;
-}
-
 Node* returnNode(int idx, int data) {
     Node *ptr = ind[idx].head->next;
     while (ptr != ind[idx].tail) {
@@ -93,13 +66,8 @@ Node* returnNode(int idx, int data) {
 
 void mstrcpy(char dst[], const char src[]);
 
-int mstrlen(const char str[]);
-
-int mstrcmp(const char str1[], const char str2[]);
-
 char input_string[50001];
 int saveIndex[50001];
-int memPoolIdx[50001];
 int n;
 
 void init(int N, char init_string[]) {
@@ -123,29 +91,22 @@ void init(int N, char init_string[]) {
 }
 
 int change(char string_A[], char string_B[]) {
-//    cout << "\n---- call Change ----\n";
     int ret = 0;
     int keyA = djb2(string_A);
-//    cout << "string B : " << string_B << "\n";
-//    cout << "string A : " << string_A << "\n";
 
     Node *ptr = ind[keyA].head->next;
     int sIdx = 0;
     while (ptr != ind[keyA].tail) {
-//            cout << ptr->next->data << " ";
         saveIndex[sIdx] = ptr->data;
-        memPoolIdx[sIdx] = ptr->myIndex;
         sIdx++;
         ptr = ptr->next;
     }
 
-//    cout << "\n";
     int prevIdx = 0;
     prevIdx = saveIndex[0];
 
     bool firstTry = true;
     for (int i = 0; i < sIdx; i++) {
-//            cout << saveIndex[i] << " ";
         int index = saveIndex[i];
         if (index < prevIdx + 3 && !firstTry) {
             continue;
@@ -153,8 +114,6 @@ int change(char string_A[], char string_B[]) {
         firstTry = false;
         prevIdx = index;
         ret++;
-//            cout << "string A exist index : " << index << "\n";
-//            cout << "prev string : " << input_string << "\n";
         Node* tmpNodeList[5];
         int tIdx= 0;
         for (int i = index - 2; i <= index + 2; i++) {
@@ -179,11 +138,7 @@ int change(char string_A[], char string_B[]) {
             int tmpKey = djb2(key);
             push_back_node(tmpKey,tmpNodeList[tIdx++]);
         }
-//            cout << "convert complete : " << input_string << "\n";
     }
-//        cout << "\n";
-
-
     return ret;
 }
 
@@ -195,18 +150,4 @@ void mstrcpy(char dst[], const char src[]) {
     int c = 0;
     while ((dst[c] = src[c]) != 0)
         ++c;
-}
-
-int mstrlen(const char str[]) {
-    int ret = 0;
-    while (str[ret])
-        ++ret;
-    return ret;
-}
-
-int mstrcmp(const char str1[], const char str2[]) {
-    int c = 0;
-    while (str1[c] != 0 && str1[c] == str2[c])
-        ++c;
-    return str1[c] - str2[c];
 }

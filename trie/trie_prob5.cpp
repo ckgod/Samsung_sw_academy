@@ -3,74 +3,44 @@
 #include <vector>
 #include <cstring>
 using namespace std;
-#define ALPHABET_CNT 26
 #define MAXN 1000000 // 대략 90만개정도 필요
 #define ll long long
 
 struct Trie;
 Trie *myAlloc();
-int searchTime = 0;
-
-struct Query{
-    char word[31];
-    int idx;
-    int queryIdx;
-
-    bool operator<(const Query q1) const {
-        return this->idx < q1.idx;
-    }
-};
-
-void mstrcpy(char dest[], char src[]) {
-    int c = 0;
-    while((dest[c] = src[c]) != 0)
-        ++c;
-}
-
-struct Dic{
-    char word[31];
-    bool queryExist;
-};
+ll sum;
 
 struct Trie {
-    Trie* _children[ALPHABET_CNT];
+    vector<pair<int,Trie*>> _children;
     bool lastLetter = false;
-    int child = 0;
-    int idx = -1;
+    int child;
+    int ret;
 
-    void add(const char *word, int idx) {
+    void add(const char *word,int _idx,int _ret) {
         child++;
+        _ret += child;
         if(*word == 0) {
             lastLetter = true;
-            this->idx = idx;
+            this->ret = _ret;
             return;
         }
-        if(_children[*word - 'a'] == nullptr) _children[*word -'a'] = myAlloc();
-        _children[*word - 'a']->add(word+1, idx);
-    }
-
-    Trie* get(const char *word) {
-        if(*word != 0) {
-            if(_children[*word -'a'] != nullptr) return _children[*word-'a']->get(word+1);
-            return nullptr;
+        bool isFind = false;
+        for(auto& c : _children) {
+            if(c.first == *word-'a') {
+                isFind = true;
+                c.second->add(word+1,_idx,_ret);
+                break;
+            }
         }
-        if(lastLetter) return this;
-        else return nullptr;
-    }
-
-    void search(const char *word) {
-        searchTime += child;
-        if(*word == 0) {
-            return;
+        if(!isFind) {
+            Trie* tmp = myAlloc();
+            _children.emplace_back(*word-'a',tmp);
+            tmp->add(word+1,_idx,_ret);
         }
-        if(_children[*word - 'a'] == nullptr) return;
-        _children[*word -'a']->search(word+1);
     }
 
     void clear() {
-        for(int i = 0; i < ALPHABET_CNT; i++) {
-            _children[i] = nullptr;
-        }
+        _children.clear();
     }
 
 };
@@ -79,28 +49,44 @@ int nodeCnt = 0;
 Trie Node[MAXN];
 int n;
 Trie *root;
-vector<Query> existQuery;
-vector<Query> nonExistQuery;
-vector<Dic> dictionary;
-int ans[30001];
-ll sum;
+
+void init() {
+    nodeCnt = 0;
+    root = myAlloc();
+    sum = 0;
+}
 
 Trie* myAlloc() {
     Trie* ret = &Node[nodeCnt++];
     ret->lastLetter = false;
     ret->child = 0;
+    ret->ret = -1;
     ret->clear();
     return ret;
 }
 
-void init() {
-    memset(ans,false,sizeof(ans));
-    existQuery.clear();
-    nonExistQuery.clear();
-    dictionary.clear();
-    nodeCnt = 0;
-    root = myAlloc();
-    sum = 0;
+int searchTime(const char *word) {
+    Trie* ptr = root;
+    int cnt = 0;
+    bool none = false;
+    for(int i = 0; word[i]; i++) {
+        cnt += ptr->child;
+        bool isFind = false;
+        for(auto& c : ptr->_children) {
+            if(c.first == word[i]-'a') {
+                isFind = true;
+                ptr = c.second;
+                continue;
+            }
+        }
+        if(!isFind) {
+            none = true;
+            break;
+        }
+    }
+    if(none) return cnt;
+    if(!ptr->lastLetter) return cnt + ptr->child;
+    return ptr->ret;
 }
 
 int main() {
@@ -108,68 +94,19 @@ int main() {
     ios::sync_with_stdio(false);
     int T; cin >> T;
     for(int tc = 1; tc <= T; tc++) {
-
         init();
         cin >> n;
         for(int i = 0; i < n; i++) {
             char str[31]; cin >> str;
-            root->add(str, i);
-            Dic tmp;
-            mstrcpy(tmp.word, str);
-            tmp.queryExist = false;
-            dictionary.push_back(tmp);
+            root->add(str,i,0);
         }
-//        for(int i = 0; i < dictionary.size(); i++) {
-//            cout << "dic word : " << dictionary[i].word << "\n";
-//        }
         cin >> n;
         for(int i = 0; i < n; i++) {
-            char str[31]; cin >> str;
-            searchTime = 0;
-            Trie* tmp = root->get(str);
-            int findIdx = -1;
-            if(tmp) {
-                findIdx = tmp->idx;
-            }
-            if(findIdx == -1) { // 사전에 없을때
-                Query tmp;
-                tmp.idx = findIdx;
-                tmp.queryIdx = i;
-                mstrcpy(tmp.word, str);
-                nonExistQuery.push_back(tmp);
-            }
-            else { // 사전에 있을때
-                Query tmp;
-                tmp.idx = findIdx;
-                tmp.queryIdx = i;
-                mstrcpy(tmp.word, str);
-                existQuery.push_back(tmp);
-                dictionary[findIdx].queryExist = true;
-            }
+            char str[31];
+            cin >> str;
+            sum += searchTime(str);
         }
-        sort(existQuery.begin(), existQuery.end());
-        // 트라이 새로만들기
-        nodeCnt = 0;
-        root = myAlloc();
-        int queryIdx = 0;
-        for(int i = 0; i < dictionary.size(); i++) {
-            root->add(dictionary[i].word, i);
-            if(dictionary[i].queryExist) {
-                searchTime = 0;
-                root->search(existQuery[queryIdx].word);
-                ans[existQuery[queryIdx].queryIdx] = searchTime;
-                queryIdx++;
-            }
-        }
-        for(int i = 0; i < nonExistQuery.size(); i++) {
-            searchTime = 0;
-            root->search(nonExistQuery[i].word);
-            ans[nonExistQuery[i].queryIdx] = searchTime;
-        }
-        for(int i = 0; i < n; i++) {
-            sum += ans[i];
-        }
-        cout << "#" << tc << " " << sum <<"\n";
+        cout << "#" << tc << " " << sum << "\n";
     }
 
     return 0;

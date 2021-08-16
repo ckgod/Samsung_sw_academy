@@ -143,59 +143,59 @@ BOJproject/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/build
 .PHONY : BOJproject/fast
 
-professional/pro_2_main.o: professional/pro_2_main.cpp.o
+professional/pro_1_main.o: professional/pro_1_main.cpp.o
 
-.PHONY : professional/pro_2_main.o
-
-# target to build an object file
-professional/pro_2_main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/professional/pro_2_main.cpp.o
-.PHONY : professional/pro_2_main.cpp.o
-
-professional/pro_2_main.i: professional/pro_2_main.cpp.i
-
-.PHONY : professional/pro_2_main.i
-
-# target to preprocess a source file
-professional/pro_2_main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/professional/pro_2_main.cpp.i
-.PHONY : professional/pro_2_main.cpp.i
-
-professional/pro_2_main.s: professional/pro_2_main.cpp.s
-
-.PHONY : professional/pro_2_main.s
-
-# target to generate assembly for a file
-professional/pro_2_main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/professional/pro_2_main.cpp.s
-.PHONY : professional/pro_2_main.cpp.s
-
-professional/pro_2_user.o: professional/pro_2_user.cpp.o
-
-.PHONY : professional/pro_2_user.o
+.PHONY : professional/pro_1_main.o
 
 # target to build an object file
-professional/pro_2_user.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/professional/pro_2_user.cpp.o
-.PHONY : professional/pro_2_user.cpp.o
+professional/pro_1_main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/professional/pro_1_main.cpp.o
+.PHONY : professional/pro_1_main.cpp.o
 
-professional/pro_2_user.i: professional/pro_2_user.cpp.i
+professional/pro_1_main.i: professional/pro_1_main.cpp.i
 
-.PHONY : professional/pro_2_user.i
+.PHONY : professional/pro_1_main.i
 
 # target to preprocess a source file
-professional/pro_2_user.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/professional/pro_2_user.cpp.i
-.PHONY : professional/pro_2_user.cpp.i
+professional/pro_1_main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/professional/pro_1_main.cpp.i
+.PHONY : professional/pro_1_main.cpp.i
 
-professional/pro_2_user.s: professional/pro_2_user.cpp.s
+professional/pro_1_main.s: professional/pro_1_main.cpp.s
 
-.PHONY : professional/pro_2_user.s
+.PHONY : professional/pro_1_main.s
 
 # target to generate assembly for a file
-professional/pro_2_user.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/professional/pro_2_user.cpp.s
-.PHONY : professional/pro_2_user.cpp.s
+professional/pro_1_main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/professional/pro_1_main.cpp.s
+.PHONY : professional/pro_1_main.cpp.s
+
+professional/pro_1_user.o: professional/pro_1_user.cpp.o
+
+.PHONY : professional/pro_1_user.o
+
+# target to build an object file
+professional/pro_1_user.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/professional/pro_1_user.cpp.o
+.PHONY : professional/pro_1_user.cpp.o
+
+professional/pro_1_user.i: professional/pro_1_user.cpp.i
+
+.PHONY : professional/pro_1_user.i
+
+# target to preprocess a source file
+professional/pro_1_user.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/professional/pro_1_user.cpp.i
+.PHONY : professional/pro_1_user.cpp.i
+
+professional/pro_1_user.s: professional/pro_1_user.cpp.s
+
+.PHONY : professional/pro_1_user.s
+
+# target to generate assembly for a file
+professional/pro_1_user.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/professional/pro_1_user.cpp.s
+.PHONY : professional/pro_1_user.cpp.s
 
 # Help Target
 help:
@@ -206,12 +206,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... BOJproject"
-	@echo "... professional/pro_2_main.o"
-	@echo "... professional/pro_2_main.i"
-	@echo "... professional/pro_2_main.s"
-	@echo "... professional/pro_2_user.o"
-	@echo "... professional/pro_2_user.i"
-	@echo "... professional/pro_2_user.s"
+	@echo "... professional/pro_1_main.o"
+	@echo "... professional/pro_1_main.i"
+	@echo "... professional/pro_1_main.s"
+	@echo "... professional/pro_1_user.o"
+	@echo "... professional/pro_1_user.i"
+	@echo "... professional/pro_1_user.s"
 .PHONY : help
 
 
