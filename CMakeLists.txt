@@ -3,4 +3,4 @@ project(BOJproject)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(BOJproject professional/pro_1_main.cpp professional/pro_1_user.cpp)
+add_executable(BOJproject trie/trie_prob6.cpp)

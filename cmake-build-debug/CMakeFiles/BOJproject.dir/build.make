@@ -77,42 +77,42 @@ include CMakeFiles/BOJproject.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/BOJproject.dir/flags.make
 
-CMakeFiles/BOJproject.dir/professional/pro_1_main.cpp.o: CMakeFiles/BOJproject.dir/flags.make
-CMakeFiles/BOJproject.dir/professional/pro_1_main.cpp.o: ../professional/pro_1_main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ckg/CLionProjects/BOJproject/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/BOJproject.dir/professional/pro_1_main.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BOJproject.dir/professional/pro_1_main.cpp.o -c /Users/ckg/CLionProjects/BOJproject/professional/pro_1_main.cpp
+CMakeFiles/BOJproject.dir/trie/trie_prob6.cpp.o: CMakeFiles/BOJproject.dir/flags.make
+CMakeFiles/BOJproject.dir/trie/trie_prob6.cpp.o: ../trie/trie_prob6.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ckg/CLionProjects/BOJproject/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/BOJproject.dir/trie/trie_prob6.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BOJproject.dir/trie/trie_prob6.cpp.o -c /Users/ckg/CLionProjects/BOJproject/trie/trie_prob6.cpp
 
-CMakeFiles/BOJproject.dir/professional/pro_1_main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BOJproject.dir/professional/pro_1_main.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ckg/CLionProjects/BOJproject/professional/pro_1_main.cpp > CMakeFiles/BOJproject.dir/professional/pro_1_main.cpp.i
+CMakeFiles/BOJproject.dir/trie/trie_prob6.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BOJproject.dir/trie/trie_prob6.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ckg/CLionProjects/BOJproject/trie/trie_prob6.cpp > CMakeFiles/BOJproject.dir/trie/trie_prob6.cpp.i
 
-CMakeFiles/BOJproject.dir/professional/pro_1_main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BOJproject.dir/professional/pro_1_main.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ckg/CLionProjects/BOJproject/professional/pro_1_main.cpp -o CMakeFiles/BOJproject.dir/professional/pro_1_main.cpp.s
+CMakeFiles/BOJproject.dir/trie/trie_prob6.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BOJproject.dir/trie/trie_prob6.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ckg/CLionProjects/BOJproject/trie/trie_prob6.cpp -o CMakeFiles/BOJproject.dir/trie/trie_prob6.cpp.s
 
-CMakeFiles/BOJproject.dir/professional/pro_1_user.cpp.o: CMakeFiles/BOJproject.dir/flags.make
-CMakeFiles/BOJproject.dir/professional/pro_1_user.cpp.o: ../professional/pro_1_user.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ckg/CLionProjects/BOJproject/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/BOJproject.dir/professional/pro_1_user.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BOJproject.dir/professional/pro_1_user.cpp.o -c /Users/ckg/CLionProjects/BOJproject/professional/pro_1_user.cpp
+CMakeFiles/BOJproject.dir/trie/tmp.cpp.o: CMakeFiles/BOJproject.dir/flags.make
+CMakeFiles/BOJproject.dir/trie/tmp.cpp.o: ../trie/tmp.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ckg/CLionProjects/BOJproject/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/BOJproject.dir/trie/tmp.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BOJproject.dir/trie/tmp.cpp.o -c /Users/ckg/CLionProjects/BOJproject/trie/tmp.cpp
 
-CMakeFiles/BOJproject.dir/professional/pro_1_user.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BOJproject.dir/professional/pro_1_user.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ckg/CLionProjects/BOJproject/professional/pro_1_user.cpp > CMakeFiles/BOJproject.dir/professional/pro_1_user.cpp.i
+CMakeFiles/BOJproject.dir/trie/tmp.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BOJproject.dir/trie/tmp.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ckg/CLionProjects/BOJproject/trie/tmp.cpp > CMakeFiles/BOJproject.dir/trie/tmp.cpp.i
 
-CMakeFiles/BOJproject.dir/professional/pro_1_user.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BOJproject.dir/professional/pro_1_user.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ckg/CLionProjects/BOJproject/professional/pro_1_user.cpp -o CMakeFiles/BOJproject.dir/professional/pro_1_user.cpp.s
+CMakeFiles/BOJproject.dir/trie/tmp.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BOJproject.dir/trie/tmp.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ckg/CLionProjects/BOJproject/trie/tmp.cpp -o CMakeFiles/BOJproject.dir/trie/tmp.cpp.s
 
 # Object files for target BOJproject
 BOJproject_OBJECTS = \
-"CMakeFiles/BOJproject.dir/professional/pro_1_main.cpp.o" \
-"CMakeFiles/BOJproject.dir/professional/pro_1_user.cpp.o"
+"CMakeFiles/BOJproject.dir/trie/trie_prob6.cpp.o" \
+"CMakeFiles/BOJproject.dir/trie/tmp.cpp.o"
 
 # External object files for target BOJproject
 BOJproject_EXTERNAL_OBJECTS =
 
-BOJproject: CMakeFiles/BOJproject.dir/professional/pro_1_main.cpp.o
-BOJproject: CMakeFiles/BOJproject.dir/professional/pro_1_user.cpp.o
+BOJproject: CMakeFiles/BOJproject.dir/trie/trie_prob6.cpp.o
+BOJproject: CMakeFiles/BOJproject.dir/trie/tmp.cpp.o
 BOJproject: CMakeFiles/BOJproject.dir/build.make
 BOJproject: CMakeFiles/BOJproject.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/ckg/CLionProjects/BOJproject/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable BOJproject"
