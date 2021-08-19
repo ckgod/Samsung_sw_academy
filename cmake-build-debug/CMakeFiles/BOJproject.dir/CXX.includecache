@@ -6,17 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/Users/ckg/CLionProjects/BOJproject/trie/trie_prob6.cpp
+/Users/ckg/CLionProjects/BOJproject/base.cpp
 iostream
+-
+map
 -
 string
 -
 vector
--
-algorithm
--
-cstring
--
-map
 -
 

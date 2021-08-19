@@ -143,59 +143,32 @@ BOJproject/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/build
 .PHONY : BOJproject/fast
 
-trie/tmp.o: trie/tmp.cpp.o
+base.o: base.cpp.o
 
-.PHONY : trie/tmp.o
-
-# target to build an object file
-trie/tmp.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/trie/tmp.cpp.o
-.PHONY : trie/tmp.cpp.o
-
-trie/tmp.i: trie/tmp.cpp.i
-
-.PHONY : trie/tmp.i
-
-# target to preprocess a source file
-trie/tmp.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/trie/tmp.cpp.i
-.PHONY : trie/tmp.cpp.i
-
-trie/tmp.s: trie/tmp.cpp.s
-
-.PHONY : trie/tmp.s
-
-# target to generate assembly for a file
-trie/tmp.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/trie/tmp.cpp.s
-.PHONY : trie/tmp.cpp.s
-
-trie/trie_prob6.o: trie/trie_prob6.cpp.o
-
-.PHONY : trie/trie_prob6.o
+.PHONY : base.o
 
 # target to build an object file
-trie/trie_prob6.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/trie/trie_prob6.cpp.o
-.PHONY : trie/trie_prob6.cpp.o
+base.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/base.cpp.o
+.PHONY : base.cpp.o
 
-trie/trie_prob6.i: trie/trie_prob6.cpp.i
+base.i: base.cpp.i
 
-.PHONY : trie/trie_prob6.i
+.PHONY : base.i
 
 # target to preprocess a source file
-trie/trie_prob6.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/trie/trie_prob6.cpp.i
-.PHONY : trie/trie_prob6.cpp.i
+base.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/base.cpp.i
+.PHONY : base.cpp.i
 
-trie/trie_prob6.s: trie/trie_prob6.cpp.s
+base.s: base.cpp.s
 
-.PHONY : trie/trie_prob6.s
+.PHONY : base.s
 
 # target to generate assembly for a file
-trie/trie_prob6.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/trie/trie_prob6.cpp.s
-.PHONY : trie/trie_prob6.cpp.s
+base.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/base.cpp.s
+.PHONY : base.cpp.s
 
 # Help Target
 help:
@@ -206,12 +179,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... BOJproject"
-	@echo "... trie/tmp.o"
-	@echo "... trie/tmp.i"
-	@echo "... trie/tmp.s"
-	@echo "... trie/trie_prob6.o"
-	@echo "... trie/trie_prob6.i"
-	@echo "... trie/trie_prob6.s"
+	@echo "... base.o"
+	@echo "... base.i"
+	@echo "... base.s"
 .PHONY : help
 
 
