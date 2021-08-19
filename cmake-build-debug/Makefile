@@ -143,32 +143,32 @@ BOJproject/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/build
 .PHONY : BOJproject/fast
 
-base.o: base.cpp.o
+lca/lca_1.o: lca/lca_1.cpp.o
 
-.PHONY : base.o
+.PHONY : lca/lca_1.o
 
 # target to build an object file
-base.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/base.cpp.o
-.PHONY : base.cpp.o
+lca/lca_1.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/lca/lca_1.cpp.o
+.PHONY : lca/lca_1.cpp.o
 
-base.i: base.cpp.i
+lca/lca_1.i: lca/lca_1.cpp.i
 
-.PHONY : base.i
+.PHONY : lca/lca_1.i
 
 # target to preprocess a source file
-base.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/base.cpp.i
-.PHONY : base.cpp.i
+lca/lca_1.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/lca/lca_1.cpp.i
+.PHONY : lca/lca_1.cpp.i
 
-base.s: base.cpp.s
+lca/lca_1.s: lca/lca_1.cpp.s
 
-.PHONY : base.s
+.PHONY : lca/lca_1.s
 
 # target to generate assembly for a file
-base.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/base.cpp.s
-.PHONY : base.cpp.s
+lca/lca_1.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/lca/lca_1.cpp.s
+.PHONY : lca/lca_1.cpp.s
 
 # Help Target
 help:
@@ -179,9 +179,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... BOJproject"
-	@echo "... base.o"
-	@echo "... base.i"
-	@echo "... base.s"
+	@echo "... lca/lca_1.o"
+	@echo "... lca/lca_1.i"
+	@echo "... lca/lca_1.s"
 .PHONY : help
 
 

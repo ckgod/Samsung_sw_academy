@@ -6,13 +6,3 @@
 
 #IncludeRegexTransform: 
 
-/Users/ckg/CLionProjects/BOJproject/base.cpp
-iostream
--
-map
--
-string
--
-vector
--
-
