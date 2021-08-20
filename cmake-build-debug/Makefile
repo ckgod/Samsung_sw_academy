@@ -143,32 +143,32 @@ BOJproject/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/build
 .PHONY : BOJproject/fast
 
-lca/lca_1.o: lca/lca_1.cpp.o
+trie/trie_prob7.o: trie/trie_prob7.cpp.o
 
-.PHONY : lca/lca_1.o
+.PHONY : trie/trie_prob7.o
 
 # target to build an object file
-lca/lca_1.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/lca/lca_1.cpp.o
-.PHONY : lca/lca_1.cpp.o
+trie/trie_prob7.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/trie/trie_prob7.cpp.o
+.PHONY : trie/trie_prob7.cpp.o
 
-lca/lca_1.i: lca/lca_1.cpp.i
+trie/trie_prob7.i: trie/trie_prob7.cpp.i
 
-.PHONY : lca/lca_1.i
+.PHONY : trie/trie_prob7.i
 
 # target to preprocess a source file
-lca/lca_1.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/lca/lca_1.cpp.i
-.PHONY : lca/lca_1.cpp.i
+trie/trie_prob7.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/trie/trie_prob7.cpp.i
+.PHONY : trie/trie_prob7.cpp.i
 
-lca/lca_1.s: lca/lca_1.cpp.s
+trie/trie_prob7.s: trie/trie_prob7.cpp.s
 
-.PHONY : lca/lca_1.s
+.PHONY : trie/trie_prob7.s
 
 # target to generate assembly for a file
-lca/lca_1.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/lca/lca_1.cpp.s
-.PHONY : lca/lca_1.cpp.s
+trie/trie_prob7.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/trie/trie_prob7.cpp.s
+.PHONY : trie/trie_prob7.cpp.s
 
 # Help Target
 help:
@@ -179,9 +179,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... BOJproject"
-	@echo "... lca/lca_1.o"
-	@echo "... lca/lca_1.i"
-	@echo "... lca/lca_1.s"
+	@echo "... trie/trie_prob7.o"
+	@echo "... trie/trie_prob7.i"
+	@echo "... trie/trie_prob7.s"
 .PHONY : help
 
 

@@ -6,3 +6,11 @@
 
 #IncludeRegexTransform: 
 
+/Users/ckg/CLionProjects/BOJproject/trie/trie_prob7.cpp
+iostream
+-
+vector
+-
+algorithm
+-
+
