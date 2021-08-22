@@ -3,6 +3,8 @@
 #endif
 
 #include <stdio.h>
+#include <iostream>
+using namespace std;
 
 typedef enum {
     INIT,
@@ -73,6 +75,7 @@ static int run() {
                     make_string(str1, p2);
                 }
                 ret = deleteEvent(p1, str1);
+                cout << "del ret : " << ret << "\n";
                 if (ret != p3)
                     answer = 0;
                 break;

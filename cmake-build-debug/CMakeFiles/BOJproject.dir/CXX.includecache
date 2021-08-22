@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/Users/ckg/CLionProjects/BOJproject/trie/trie_prob7.cpp
+/Users/ckg/CLionProjects/BOJproject/lca/lca_2.cpp
 iostream
 -
 vector
