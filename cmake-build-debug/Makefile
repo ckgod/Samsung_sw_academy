@@ -170,6 +170,33 @@ lca/lca_2.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/lca/lca_2.cpp.s
 .PHONY : lca/lca_2.cpp.s
 
+offline_query/offline_query_2.o: offline_query/offline_query_2.cpp.o
+
+.PHONY : offline_query/offline_query_2.o
+
+# target to build an object file
+offline_query/offline_query_2.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/offline_query/offline_query_2.cpp.o
+.PHONY : offline_query/offline_query_2.cpp.o
+
+offline_query/offline_query_2.i: offline_query/offline_query_2.cpp.i
+
+.PHONY : offline_query/offline_query_2.i
+
+# target to preprocess a source file
+offline_query/offline_query_2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/offline_query/offline_query_2.cpp.i
+.PHONY : offline_query/offline_query_2.cpp.i
+
+offline_query/offline_query_2.s: offline_query/offline_query_2.cpp.s
+
+.PHONY : offline_query/offline_query_2.s
+
+# target to generate assembly for a file
+offline_query/offline_query_2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/offline_query/offline_query_2.cpp.s
+.PHONY : offline_query/offline_query_2.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -182,6 +209,9 @@ help:
 	@echo "... lca/lca_2.o"
 	@echo "... lca/lca_2.i"
 	@echo "... lca/lca_2.s"
+	@echo "... offline_query/offline_query_2.o"
+	@echo "... offline_query/offline_query_2.i"
+	@echo "... offline_query/offline_query_2.s"
 .PHONY : help
 
 

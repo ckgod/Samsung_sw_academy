@@ -3,4 +3,4 @@ project(BOJproject)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(BOJproject lca/lca_2.cpp)
+add_executable(BOJproject lca/lca_2.cpp offline_query/offline_query_2.cpp)
