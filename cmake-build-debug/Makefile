@@ -143,33 +143,6 @@ BOJproject/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/build
 .PHONY : BOJproject/fast
 
-lca/lca_2.o: lca/lca_2.cpp.o
-
-.PHONY : lca/lca_2.o
-
-# target to build an object file
-lca/lca_2.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/lca/lca_2.cpp.o
-.PHONY : lca/lca_2.cpp.o
-
-lca/lca_2.i: lca/lca_2.cpp.i
-
-.PHONY : lca/lca_2.i
-
-# target to preprocess a source file
-lca/lca_2.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/lca/lca_2.cpp.i
-.PHONY : lca/lca_2.cpp.i
-
-lca/lca_2.s: lca/lca_2.cpp.s
-
-.PHONY : lca/lca_2.s
-
-# target to generate assembly for a file
-lca/lca_2.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/lca/lca_2.cpp.s
-.PHONY : lca/lca_2.cpp.s
-
 offline_query/offline_query_2.o: offline_query/offline_query_2.cpp.o
 
 .PHONY : offline_query/offline_query_2.o
@@ -206,9 +179,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... BOJproject"
-	@echo "... lca/lca_2.o"
-	@echo "... lca/lca_2.i"
-	@echo "... lca/lca_2.s"
 	@echo "... offline_query/offline_query_2.o"
 	@echo "... offline_query/offline_query_2.i"
 	@echo "... offline_query/offline_query_2.s"

@@ -80,9 +80,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/ckg/CLionProjects/BOJproject/lca/lca_2.cpp">
-			<Option target="BOJproject"/>
-		</Unit>
 		<Unit filename="/Users/ckg/CLionProjects/BOJproject/offline_query/offline_query_2.cpp">
 			<Option target="BOJproject"/>
 		</Unit>

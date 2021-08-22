@@ -1,7 +1,6 @@
 file(REMOVE_RECURSE
   "BOJproject"
   "BOJproject.pdb"
-  "CMakeFiles/BOJproject.dir/lca/lca_2.cpp.o"
   "CMakeFiles/BOJproject.dir/offline_query/offline_query_2.cpp.o"
 )
 
