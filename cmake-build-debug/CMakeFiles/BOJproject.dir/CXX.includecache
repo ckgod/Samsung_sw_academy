@@ -6,13 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/Users/ckg/CLionProjects/BOJproject/offline_query/offline_query_2.cpp
+/Users/ckg/CLionProjects/BOJproject/base.cpp
 iostream
--
-algorithm
 -
 vector
 -
-string
+algorithm
 -
 

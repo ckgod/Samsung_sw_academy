@@ -1,7 +1,8 @@
 file(REMOVE_RECURSE
   "BOJproject"
   "BOJproject.pdb"
-  "CMakeFiles/BOJproject.dir/offline_query/offline_query_2.cpp.o"
+  "CMakeFiles/BOJproject.dir/base.cpp.o"
+  "CMakeFiles/BOJproject.dir/offline_query/offline_query_3.cpp.o"
 )
 
 # Per-language clean rules from dependency scanning.
