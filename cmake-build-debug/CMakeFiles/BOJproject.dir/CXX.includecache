@@ -6,11 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/Users/ckg/CLionProjects/BOJproject/base.cpp
-iostream
+/Users/ckg/CLionProjects/BOJproject/professional/pro_8_21_main.cpp
+stdio.h
 -
-vector
--
-algorithm
+time.h
 -
 

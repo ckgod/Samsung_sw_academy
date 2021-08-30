@@ -143,59 +143,59 @@ BOJproject/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/build
 .PHONY : BOJproject/fast
 
-base.o: base.cpp.o
+professional/pro_8_21_main.o: professional/pro_8_21_main.cpp.o
 
-.PHONY : base.o
-
-# target to build an object file
-base.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/base.cpp.o
-.PHONY : base.cpp.o
-
-base.i: base.cpp.i
-
-.PHONY : base.i
-
-# target to preprocess a source file
-base.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/base.cpp.i
-.PHONY : base.cpp.i
-
-base.s: base.cpp.s
-
-.PHONY : base.s
-
-# target to generate assembly for a file
-base.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/base.cpp.s
-.PHONY : base.cpp.s
-
-offline_query/offline_query_3.o: offline_query/offline_query_3.cpp.o
-
-.PHONY : offline_query/offline_query_3.o
+.PHONY : professional/pro_8_21_main.o
 
 # target to build an object file
-offline_query/offline_query_3.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/offline_query/offline_query_3.cpp.o
-.PHONY : offline_query/offline_query_3.cpp.o
+professional/pro_8_21_main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/professional/pro_8_21_main.cpp.o
+.PHONY : professional/pro_8_21_main.cpp.o
 
-offline_query/offline_query_3.i: offline_query/offline_query_3.cpp.i
+professional/pro_8_21_main.i: professional/pro_8_21_main.cpp.i
 
-.PHONY : offline_query/offline_query_3.i
+.PHONY : professional/pro_8_21_main.i
 
 # target to preprocess a source file
-offline_query/offline_query_3.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/offline_query/offline_query_3.cpp.i
-.PHONY : offline_query/offline_query_3.cpp.i
+professional/pro_8_21_main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/professional/pro_8_21_main.cpp.i
+.PHONY : professional/pro_8_21_main.cpp.i
 
-offline_query/offline_query_3.s: offline_query/offline_query_3.cpp.s
+professional/pro_8_21_main.s: professional/pro_8_21_main.cpp.s
 
-.PHONY : offline_query/offline_query_3.s
+.PHONY : professional/pro_8_21_main.s
 
 # target to generate assembly for a file
-offline_query/offline_query_3.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/offline_query/offline_query_3.cpp.s
-.PHONY : offline_query/offline_query_3.cpp.s
+professional/pro_8_21_main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/professional/pro_8_21_main.cpp.s
+.PHONY : professional/pro_8_21_main.cpp.s
+
+professional/pro_8_21_user.o: professional/pro_8_21_user.cpp.o
+
+.PHONY : professional/pro_8_21_user.o
+
+# target to build an object file
+professional/pro_8_21_user.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/professional/pro_8_21_user.cpp.o
+.PHONY : professional/pro_8_21_user.cpp.o
+
+professional/pro_8_21_user.i: professional/pro_8_21_user.cpp.i
+
+.PHONY : professional/pro_8_21_user.i
+
+# target to preprocess a source file
+professional/pro_8_21_user.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/professional/pro_8_21_user.cpp.i
+.PHONY : professional/pro_8_21_user.cpp.i
+
+professional/pro_8_21_user.s: professional/pro_8_21_user.cpp.s
+
+.PHONY : professional/pro_8_21_user.s
+
+# target to generate assembly for a file
+professional/pro_8_21_user.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/professional/pro_8_21_user.cpp.s
+.PHONY : professional/pro_8_21_user.cpp.s
 
 # Help Target
 help:
@@ -206,12 +206,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... BOJproject"
-	@echo "... base.o"
-	@echo "... base.i"
-	@echo "... base.s"
-	@echo "... offline_query/offline_query_3.o"
-	@echo "... offline_query/offline_query_3.i"
-	@echo "... offline_query/offline_query_3.s"
+	@echo "... professional/pro_8_21_main.o"
+	@echo "... professional/pro_8_21_main.i"
+	@echo "... professional/pro_8_21_main.s"
+	@echo "... professional/pro_8_21_user.o"
+	@echo "... professional/pro_8_21_user.i"
+	@echo "... professional/pro_8_21_user.s"
 .PHONY : help
 
 

@@ -3,4 +3,4 @@ project(BOJproject)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(BOJproject base.cpp offline_query/offline_query_3.cpp)
+add_executable(BOJproject professional/pro_8_21_user.cpp professional/pro_8_21_main.cpp sample_25_input.txt)

@@ -80,10 +80,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/ckg/CLionProjects/BOJproject/base.cpp">
+		<Unit filename="/Users/ckg/CLionProjects/BOJproject/professional/pro_8_21_main.cpp">
 			<Option target="BOJproject"/>
 		</Unit>
-		<Unit filename="/Users/ckg/CLionProjects/BOJproject/offline_query/offline_query_3.cpp">
+		<Unit filename="/Users/ckg/CLionProjects/BOJproject/professional/pro_8_21_user.cpp">
+			<Option target="BOJproject"/>
+		</Unit>
+		<Unit filename="/Users/ckg/CLionProjects/BOJproject/sample_25_input.txt">
 			<Option target="BOJproject"/>
 		</Unit>
 		<Unit filename="/Users/ckg/CLionProjects/BOJproject/CMakeLists.txt">
