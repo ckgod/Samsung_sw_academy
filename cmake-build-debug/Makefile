@@ -143,59 +143,32 @@ BOJproject/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/build
 .PHONY : BOJproject/fast
 
-professional/pro_8_21_main.o: professional/pro_8_21_main.cpp.o
+base.o: base.cpp.o
 
-.PHONY : professional/pro_8_21_main.o
-
-# target to build an object file
-professional/pro_8_21_main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/professional/pro_8_21_main.cpp.o
-.PHONY : professional/pro_8_21_main.cpp.o
-
-professional/pro_8_21_main.i: professional/pro_8_21_main.cpp.i
-
-.PHONY : professional/pro_8_21_main.i
-
-# target to preprocess a source file
-professional/pro_8_21_main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/professional/pro_8_21_main.cpp.i
-.PHONY : professional/pro_8_21_main.cpp.i
-
-professional/pro_8_21_main.s: professional/pro_8_21_main.cpp.s
-
-.PHONY : professional/pro_8_21_main.s
-
-# target to generate assembly for a file
-professional/pro_8_21_main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/professional/pro_8_21_main.cpp.s
-.PHONY : professional/pro_8_21_main.cpp.s
-
-professional/pro_8_21_user.o: professional/pro_8_21_user.cpp.o
-
-.PHONY : professional/pro_8_21_user.o
+.PHONY : base.o
 
 # target to build an object file
-professional/pro_8_21_user.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/professional/pro_8_21_user.cpp.o
-.PHONY : professional/pro_8_21_user.cpp.o
+base.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/base.cpp.o
+.PHONY : base.cpp.o
 
-professional/pro_8_21_user.i: professional/pro_8_21_user.cpp.i
+base.i: base.cpp.i
 
-.PHONY : professional/pro_8_21_user.i
+.PHONY : base.i
 
 # target to preprocess a source file
-professional/pro_8_21_user.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/professional/pro_8_21_user.cpp.i
-.PHONY : professional/pro_8_21_user.cpp.i
+base.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/base.cpp.i
+.PHONY : base.cpp.i
 
-professional/pro_8_21_user.s: professional/pro_8_21_user.cpp.s
+base.s: base.cpp.s
 
-.PHONY : professional/pro_8_21_user.s
+.PHONY : base.s
 
 # target to generate assembly for a file
-professional/pro_8_21_user.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/professional/pro_8_21_user.cpp.s
-.PHONY : professional/pro_8_21_user.cpp.s
+base.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/base.cpp.s
+.PHONY : base.cpp.s
 
 # Help Target
 help:
@@ -206,12 +179,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... BOJproject"
-	@echo "... professional/pro_8_21_main.o"
-	@echo "... professional/pro_8_21_main.i"
-	@echo "... professional/pro_8_21_main.s"
-	@echo "... professional/pro_8_21_user.o"
-	@echo "... professional/pro_8_21_user.i"
-	@echo "... professional/pro_8_21_user.s"
+	@echo "... base.o"
+	@echo "... base.i"
+	@echo "... base.s"
 .PHONY : help
 
 

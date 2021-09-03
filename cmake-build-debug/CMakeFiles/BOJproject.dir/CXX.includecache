@@ -6,9 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/Users/ckg/CLionProjects/BOJproject/professional/pro_8_21_main.cpp
-stdio.h
+/Users/ckg/CLionProjects/BOJproject/base.cpp
+iostream
 -
-time.h
+queue
+-
+algorithm
+-
+string
+-
+cstring
+-
+tuple
 -
 

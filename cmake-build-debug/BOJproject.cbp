@@ -80,13 +80,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/ckg/CLionProjects/BOJproject/professional/pro_8_21_main.cpp">
-			<Option target="BOJproject"/>
-		</Unit>
-		<Unit filename="/Users/ckg/CLionProjects/BOJproject/professional/pro_8_21_user.cpp">
-			<Option target="BOJproject"/>
-		</Unit>
-		<Unit filename="/Users/ckg/CLionProjects/BOJproject/sample_25_input.txt">
+		<Unit filename="/Users/ckg/CLionProjects/BOJproject/base.cpp">
 			<Option target="BOJproject"/>
 		</Unit>
 		<Unit filename="/Users/ckg/CLionProjects/BOJproject/CMakeLists.txt">
