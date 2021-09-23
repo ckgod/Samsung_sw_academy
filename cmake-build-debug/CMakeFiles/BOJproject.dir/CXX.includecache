@@ -9,14 +9,12 @@
 /Users/ckg/CLionProjects/BOJproject/base.cpp
 iostream
 -
+vector
+-
 queue
 -
-algorithm
--
-string
+tuple
 -
 cstring
--
-tuple
 -
 

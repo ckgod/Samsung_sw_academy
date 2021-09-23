@@ -1,43 +1,59 @@
-#include <iostream>
-#include <string>
+#include<iostream>
+#include<string>
+#include<queue>
+#include<utility>
 using namespace std;
-int n,m; string str;
-long long dp[10001][1<<4];
-bool v[1<<4];
 
-int main() {
-    int t; cin >> t;
-    for(int tc = 1; tc <=t; ++tc){
-        for(int i = 0; i < 10001; i++) {
-            for(int j = 0; j < (1<<4); j++) {
-                dp[i][j] = 0;
-            }
-        }
-        string str; cin >> str;
-        int cnt = 0; int p = 1;
-        p |= (1 << (str[0] = 'A'));
-        for(int i = 0; i < 16; i++) {
-            dp[1][p | i] = 1;
-        }
-        for(int i = 2; i <= str.length(); i++) {
-            for(int j = 0; j < 16; j++) {
-                if(dp[i-1][j]) {
-                    for(int k = 0; k < 16; k++) {
-                        int t = k | (1 << (str[i-1] - 'A'));
-                        if(t & j && !v[t]) {
-                            dp[i][t] += dp[i-1][j];
-                            dp[i][t] %= 1000000007;
-                            v[t] = true;
-                        }
+
+int n, m;
+bool board[100][100];
+bool visit[100][100];
+int dx[] = { -1,1,0,0 };
+int dy[] = { 0,0,1,-1 };
+int depth=0;
+
+
+void bfs() {
+    depth++;
+    visit[0][0] = true;
+    queue<pair<int, int>> q;
+    q.push(make_pair(0, 0));
+    while (!q.empty()) {
+        bool find = false;
+        pair<int, int> currentNode = q.front();
+        q.pop();
+        for (int move = 0; move < 4; move++) {
+            int nx = currentNode.second+dx[move];
+            int ny = currentNode.first+dy[move];
+            if (nx >= 0 && ny >= 0 && nx < m && ny < n) {
+                if (board[ny][nx]) {
+                    if (!visit[ny][nx]) {
+                        visit[ny][nx] = true;
+                        find = true;
+                        q.push(make_pair(ny, nx));
                     }
-                    for(int k = 0; k < 16; k++) v[k] = false;
                 }
             }
         }
-        for(int i = 0; i < 16; i++) {
-            cnt += dp[str.length()][i];
-            cnt %= 1000000007;
+        if (find) {
+            depth++;
         }
-        cout << "#" << tc << " " << cnt << "\n";
+        if (visit[n - 1][m - 1]){
+            return;
+        }
     }
+}
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(NULL);
+    cin >> n >> m;
+    for (int i = 0; i < n; i++) {
+        string temp;
+        cin >> temp;
+        for (int j = 0; j < m; j++) {
+            board[i][j] = temp[j] - '0';
+        }
+    }
+    bfs();
+    cout << depth << "\n";
 }
