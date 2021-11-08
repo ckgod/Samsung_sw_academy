@@ -5,39 +5,42 @@ using namespace std;
 int A[MAXN + 10];
 int sorted[MAXN + 10];
 
-void merge(int l, int m, int r) {
-    int i,j,k;
-    i = l; j = m+ 1; k =l;
-    while(i <= m && j <= r) {
-        if(A[i] <= A[j]) {
-            sorted[k++] = A[i++];
+void merge(int left, int mid, int right) {
+    int leftArrIdx, rightArrIdx, sortedArrIdx;
+    leftArrIdx = left;
+    rightArrIdx = mid+1;
+    sortedArrIdx = left;
+
+    while(leftArrIdx <= mid && rightArrIdx <= right) { // 쪼개진 왼쪽 배열과 오른쪽 배열을 비교하면서 정렬
+        if(A[leftArrIdx] <= A[rightArrIdx]) {
+            sorted[sortedArrIdx++] = A[leftArrIdx++];
         }
         else {
-            sorted[k++] = A[j++];
+            sorted[sortedArrIdx++] = A[rightArrIdx++];
         }
     }
-    if(i > m) {
-        while(j <= r) {
-            sorted[k++] = A[j++];
+    if(leftArrIdx > mid) { // 아직 정렬되지 않은 애들 넣어주기
+        while(rightArrIdx <= right) {
+            sorted[sortedArrIdx++] = A[rightArrIdx++];
         }
     }
     else {
-        while(i <= m) {
-            sorted[k++] = A[i++];
+        while(leftArrIdx <= mid) {
+            sorted[sortedArrIdx++] = A[leftArrIdx++];
         }
     }
-    for(i = l; i <= r; i++) {
+    for(int i = left; i <= right; i++) { // 원래 배열에 복사
         A[i] = sorted[i];
     }
 }
 
-void mergeSort(int l, int r) {
+void mergeSort(int l, int r) { // 배열을 반씩 계속 쪼개줌
     int m;
     if(l < r) {
         m = (l + r) / 2;
         mergeSort(l,m);
         mergeSort(m+1, r);
-        merge(l,m,r);
+        merge(l,m,r); // 쪼개진걸 합침
     }
 }
 
