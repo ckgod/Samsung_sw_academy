@@ -83,6 +83,9 @@
 		<Unit filename="/Users/ckg/CLionProjects/BOJproject/base.cpp">
 			<Option target="BOJproject"/>
 		</Unit>
+		<Unit filename="/Users/ckg/CLionProjects/BOJproject/sorting/selection_sort.cpp">
+			<Option target="BOJproject"/>
+		</Unit>
 		<Unit filename="/Users/ckg/CLionProjects/BOJproject/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

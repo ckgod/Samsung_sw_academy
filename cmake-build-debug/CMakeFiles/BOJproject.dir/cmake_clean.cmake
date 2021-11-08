@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "BOJproject"
   "BOJproject.pdb"
   "CMakeFiles/BOJproject.dir/base.cpp.o"
+  "CMakeFiles/BOJproject.dir/sorting/selection_sort.cpp.o"
 )
 
 # Per-language clean rules from dependency scanning.
