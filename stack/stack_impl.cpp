@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+#define MAX_N 10000
 
 struct Stack {
     int a[MAX_N];

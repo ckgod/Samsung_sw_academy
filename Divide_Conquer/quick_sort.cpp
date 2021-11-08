@@ -23,6 +23,7 @@ void qsort(int l, int r) {
     qsort(s,r);
 }
 
+
 int main() {
     cin.tie(NULL);
     ios::sync_with_stdio(false);

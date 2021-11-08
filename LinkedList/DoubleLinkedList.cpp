@@ -69,7 +69,5 @@ int main() {
         cout << it->val << " ";
     }
 
-
-
     return 0;
 }
