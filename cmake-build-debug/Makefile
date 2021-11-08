@@ -170,33 +170,6 @@ base.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/base.cpp.s
 .PHONY : base.cpp.s
 
-sorting/selection_sort.o: sorting/selection_sort.cpp.o
-
-.PHONY : sorting/selection_sort.o
-
-# target to build an object file
-sorting/selection_sort.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/sorting/selection_sort.cpp.o
-.PHONY : sorting/selection_sort.cpp.o
-
-sorting/selection_sort.i: sorting/selection_sort.cpp.i
-
-.PHONY : sorting/selection_sort.i
-
-# target to preprocess a source file
-sorting/selection_sort.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/sorting/selection_sort.cpp.i
-.PHONY : sorting/selection_sort.cpp.i
-
-sorting/selection_sort.s: sorting/selection_sort.cpp.s
-
-.PHONY : sorting/selection_sort.s
-
-# target to generate assembly for a file
-sorting/selection_sort.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BOJproject.dir/build.make CMakeFiles/BOJproject.dir/sorting/selection_sort.cpp.s
-.PHONY : sorting/selection_sort.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -209,9 +182,6 @@ help:
 	@echo "... base.o"
 	@echo "... base.i"
 	@echo "... base.s"
-	@echo "... sorting/selection_sort.o"
-	@echo "... sorting/selection_sort.i"
-	@echo "... sorting/selection_sort.s"
 .PHONY : help
 
 
