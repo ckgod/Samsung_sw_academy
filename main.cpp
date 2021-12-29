@@ -1,59 +1,69 @@
-#include<iostream>
-#include<string>
-#include<queue>
-#include<utility>
+#include <iostream>
+#include <string>
+#include <vector>
+#include <algorithm>
 using namespace std;
 
+struct Person{
+    int R,G,B;
+    bool trade;
+};
+vector<Person> personList;
 
-int n, m;
-bool board[100][100];
-bool visit[100][100];
-int dx[] = { -1,1,0,0 };
-int dy[] = { 0,0,1,-1 };
-int depth=0;
+int sol(vector<vector<int>> cards){
+    int answer = 0;
+    int n = cards.size();
+    for(auto p : cards) {
+        personList.push_back({p[0],p[1],p[2],false});
+    }
+    for(int i = 0; i < personList.size(); i++) {
+        for(int j = i+1; j < personList.size(); j++) {
+            if(personList[i].trade || personList[j].trade) continue;
+            int firstScore = min(personList[i].R, min(personList[i].G, personList[i].B));
+            int secondScore = min(personList[j].R, min(personList[j].G, personList[j].B));
+            int fR = personList[i].R; int fG = personList[i].G; int fB = personList[i].B;
+            int sR = personList[j].R; int sG = personList[j].G; int sB = personList[j].B;
 
-
-void bfs() {
-    depth++;
-    visit[0][0] = true;
-    queue<pair<int, int>> q;
-    q.push(make_pair(0, 0));
-    while (!q.empty()) {
-        bool find = false;
-        pair<int, int> currentNode = q.front();
-        q.pop();
-        for (int move = 0; move < 4; move++) {
-            int nx = currentNode.second+dx[move];
-            int ny = currentNode.first+dy[move];
-            if (nx >= 0 && ny >= 0 && nx < m && ny < n) {
-                if (board[ny][nx]) {
-                    if (!visit[ny][nx]) {
-                        visit[ny][nx] = true;
-                        find = true;
-                        q.push(make_pair(ny, nx));
-                    }
-                }
+            if(fR > 0 && sG > 0 && firstScore < min(fR-1, min(fG+1, fB)) && secondScore < min(sR+1, min(sG-1, sB))) {
+                personList[i].trade = true; personList[j].trade = true;
+                personList[i].R--; personList[i].G++;
+                personList[j].R++; personList[j].G--;
+            }
+            else if(fR > 0 && sB > 0 && firstScore < min(fR-1, min(fG, fB+1)) && secondScore < min(sR+1, min(sG, sB-1))) {
+                personList[i].trade = true; personList[j].trade = true;
+                personList[i].R--; personList[i].B++;
+                personList[j].R++; personList[j].B--;
+            }
+            else if(fG > 0 && sR > 0 && firstScore < min(fR+1, min(fG-1, fB)) && secondScore < min(sR-1, min(sG+1, sB))) {
+                personList[i].trade = true; personList[j].trade = true;
+                personList[i].G--; personList[i].R++;
+                personList[j].G++; personList[j].R--;
+            }
+            else if(fG > 0 && sB > 0 && firstScore < min(fR, min(fG-1, fB+1)) && secondScore < min(sR, min(sG+1, sB-1))) {
+                personList[i].trade = true; personList[j].trade = true;
+                personList[i].G--; personList[i].B++;
+                personList[j].G++; personList[j].B--;
+            }
+            else if(fB > 0 && sR > 0 && firstScore < min(fR+1, min(fG, fB-1)) && secondScore < min(sR-1, min(sG, sB+1))) {
+                personList[i].trade = true; personList[j].trade = true;
+                personList[i].B--; personList[i].R++;
+                personList[j].B++; personList[j].R--;
+            }
+            else if(fB > 0 && sG > 0 && firstScore < min(fR, min(fG+1, fB-1)) && secondScore < min(sR, min(sG-1, sB+1))) {
+                personList[i].trade = true; personList[j].trade = true;
+                personList[i].B--; personList[i].G++;
+                personList[j].B++; personList[j].G--;
             }
         }
-        if (find) {
-            depth++;
-        }
-        if (visit[n - 1][m - 1]){
-            return;
-        }
     }
+    for(auto p : personList) {
+        answer += min(p.G, min(p.R, p.B));
+    }
+
+    return answer;
 }
+
 int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(NULL);
-    cin >> n >> m;
-    for (int i = 0; i < n; i++) {
-        string temp;
-        cin >> temp;
-        for (int j = 0; j < m; j++) {
-            board[i][j] = temp[j] - '0';
-        }
-    }
-    bfs();
-    cout << depth << "\n";
+    cout << sol({{8,11,11},{10,7,13},{15,10,5},{7,17,6}});
+//    cout << sol({{0,0,30}, {30,0,0}});
 }
