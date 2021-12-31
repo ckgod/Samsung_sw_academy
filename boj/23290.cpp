@@ -153,7 +153,6 @@ int main() {
                     visit[nextX][nextY] = true;
                     checkMaxFish[i][j][k] = fishCnt;
                     maxFishCnt = max(maxFishCnt, fishCnt);
-                    // 1, 1, 3 일때 상으로가면서 이미 잡아먹힌 물고기를 하로가면서 다시 잡아먹어 버려서 2마리를 잡아먹음 -> visit 체크로 해결
                 }
             }
         }
