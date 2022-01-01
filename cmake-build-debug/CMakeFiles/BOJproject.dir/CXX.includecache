@@ -11,6 +11,8 @@ iostream
 -
 algorithm
 -
-vector
+queue
+-
+cstring
 -
 
