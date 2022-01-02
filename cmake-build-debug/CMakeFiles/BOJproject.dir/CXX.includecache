@@ -9,10 +9,6 @@
 /Users/ckg/CLionProjects/BOJproject/base.cpp
 iostream
 -
-algorithm
--
-queue
--
-cstring
+vector
 -
 
