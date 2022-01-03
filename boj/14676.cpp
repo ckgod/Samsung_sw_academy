@@ -3,10 +3,10 @@
 using namespace std;
 
 int n,m,k;
-vector<int> graph[100001]; // 안에 3개까지 밖에 안들어감
+vector<int> graph[100001];
 int ind[100001];
 bool exist[100001];
-int cnt[100001]; // 건물이 여러개 지어질 수 도 있다???
+int cnt[100001];
 bool cheat = false;
 
 int main() {
