@@ -9,8 +9,10 @@
 /Users/ckg/CLionProjects/BOJproject/base.cpp
 iostream
 -
-queue
+set
 -
-vector
+algorithm
+-
+cmath
 -
 
